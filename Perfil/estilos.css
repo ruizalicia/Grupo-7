@@ -14,59 +14,75 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a {
-    text-decoration: none;
-    color: inherit; /* Mantener color de texto consistente */
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-header ul li {
-    margin: 5px;
-}
-
-.logo {
-    width: 169px; /* Ancho del div */
-    height: 66px; /* Alto del div */
-    background-image: url('IMAGENES/logo_navbar.png'); /* Ajusta la ruta de la imagen */
-    background-size: cover; /* La imagen se ajustará para cubrir el div */
-    background-position: center; /* Centra la imagen dentro del div */
+.logo img {
+    width: 70px; /* Ajusta el tamaño del logo */
+    height: auto;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 25%;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .nav-links li {
-    padding: 14px 20px;
+    margin: 0 10px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #000;
-    font-size: 16px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
-    font-weight: bold;
+    color: #D1460B;
+    font-size: 8px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
+    font-weight: regular;
+    padding: 10px 15px;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
     color: #ff5733;
-    outline: none; /* Quita outline por defecto
+    text-decoration: none; /* Añade subrayado en hover y focus */
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.auth-links .register {
+    background-color: #28a745;
+}
+
+.auth-links a:hover,
+.auth-links a:focus {
+    background-color: #0056b3;
+    outline: none; /* Quita outline por defecto en focus */
+}
+
+.auth-links a:focus {
+    outline: 2px solid #ff5733; /* Añade un borde en foco para accesibilidad */
+    outline-offset: 2px;
+}

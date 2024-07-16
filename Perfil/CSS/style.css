@@ -28,14 +28,10 @@ header ul li{
     margin: 5px;
 }
 
-.logo {
-    width: 169px; /* Ancho del div */
-    height: 66px; /* Alto del div */
-    background-image: url('ruta/de/la/imagen.jpg');
-    background-size: cover; /* La imagen se ajustará para cubrir el div */
-    background-position: center; /* Centra la imagen dentro del div */
+.logo img {
+    width: 70px; /* Ajusta el tamaño del logo */
+    height: auto;
 }
-
 
 .navbar {
     display: flex;
