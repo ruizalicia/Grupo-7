@@ -10,6 +10,28 @@ body {
     font-family: "Open sans", sans-serif;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+header ul li{
+    margin: 10px;
+}
+
+logo img {
+    width: auto;
+    height: auto;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,10 +39,6 @@ body {
     background-color: #fff;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-    height: 50px;
 }
 
 .nav-links {
@@ -36,7 +54,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 8px;
     font-weight: bold;
 }
 
