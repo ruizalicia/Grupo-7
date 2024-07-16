@@ -37,7 +37,7 @@ header {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .nav-links li {
@@ -46,10 +46,12 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #D1460B;
+    color: #772704;
     font-size: 8px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
     font-weight: regular;
     padding: 10px 15px;
+    text-indent: 2px;
+    text-size-adjust: auto;
 }
 
 .nav-links a:hover,
