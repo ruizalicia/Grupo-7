@@ -50,7 +50,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    color: #ff5733;
+    color: #1d697c;
     text-decoration: none; /* Añade subrayado en hover y focus */
 }
 
