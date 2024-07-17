@@ -23,47 +23,36 @@ header {
 
 /* Estilo para la barra de navegación */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 25%;
-}
-
-.nav-links {
-    list-style: none;
+    background-color: #fff;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-/* Estilo para los enlaces de navegación */
+
+  /* Estilo para los enlaces de navegación */
 .navbar a {
     color: #007BFF;
     text-decoration: none;
-    color: #772704;
-    font-size: 8px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
+    font-size: 16px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
     font-weight: regular;
     padding: 10px 15px;
     text-indent: 2px;
     text-size-adjust: auto;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    color: #1d697c;
-    text-decoration: none; /* Añade subrayado en hover y focus */
+  /* Hover effect para los enlaces */
+.navbar a:hover {
+    color: #0056b3;
+    font-weight: bold;
 }
 
-.auth-links {
+  /* Alineación de los elementos */
+.navbar .menu {
     display: flex;
     align-items: center;
-}
-
-  /* Flexbox para la navbar */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -79,5 +68,46 @@ header {
 
     .navbar a {
     margin: 10px 0;
+    }
+}
+
+/* Botones de registro e inicio de sesión */
+.auth-links button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.auth-links button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-links button {
+        margin-top: 10px;
     }
 }
