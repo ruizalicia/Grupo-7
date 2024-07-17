@@ -23,9 +23,14 @@ header {
 
 /* Estilo para la barra de navegación */
 .navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.nav-links {
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,24 +40,21 @@ header {
 .navbar a {
     color: #007BFF;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    color: #772704;
+    font-size: 8px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
+    font-weight: regular;
+    padding: 10px 15px;
+    text-indent: 2px;
+    text-size-adjust: auto;
 }
 
-  /* Hover effect para los enlaces */
-.navbar a:hover {
-    color: #0056b3;
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #ff5733;
+    text-decoration: none; /* Añade subrayado en hover y focus */
 }
 
-  /* Estilo para el logo */
-.navbar .logo {
-    font-size: 20px;
-    font-weight: bold;;
-}
-
-  /* Alineación de los elementos */
-.navbar .menu {
+.auth-links {
     display: flex;
     align-items: center;
 }
