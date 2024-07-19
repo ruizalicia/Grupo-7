@@ -111,3 +111,23 @@ header {
         margin-top: 10px;
     }
 }
+
+.card h-100{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centra las tarjetas horizontalmente */
+    padding: 20px;
+    gap: 20 px;
+}
+
+.card {
+    background-color: #d24d0b;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Espacio dentro de cada tarjeta */
+    margin: 10px; /* Espacio fuera de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho de las tarjetas */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    color: white; /* Color del texto */
+}
