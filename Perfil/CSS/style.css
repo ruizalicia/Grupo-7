@@ -118,6 +118,7 @@ header {
     justify-content: center; /* centra las tarjetas horizontalmente */
     padding: 20px;
     gap: 20 px;
+    background-color: #d24d0b;
 }
 
 .card {
