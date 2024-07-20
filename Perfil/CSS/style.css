@@ -130,5 +130,5 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px; /* Ancho de las tarjetas */
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    color: white; /* Color del texto */
+    color: #2571b2; /* Color del texto */
 }
