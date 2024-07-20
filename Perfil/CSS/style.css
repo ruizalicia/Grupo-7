@@ -6,7 +6,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 350px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -132,3 +132,8 @@ header {
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
     color: #2571b2; /* Color del texto */
 }
+
+footer{
+    background-color:#2571b2;
+}
+
