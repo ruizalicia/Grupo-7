@@ -114,12 +114,13 @@ header {
 
 /*aquí comienza el estilo de las cards*/
 section {
-    padding: 0 200px; /* Espaciado a ambos lados de la sección */
+    padding: 0 120px; /* Espaciado a ambos lados de la sección */
+    margin-bottom: 40px; /* Espacio inferior entre la sección y la siguiente */
 }
 
 .row {
     display: flex; /* Usa Flexbox para alinear los elementos */
-    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    justify-content: block; /* Distribuye las columnas con espacio entre ellas */
 }
 
 .card {
@@ -136,13 +137,14 @@ section {
 .footer {
     background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
     padding: 20px 0; /* Espaciado superior e inferior */
-
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
 }
 
 .container {
     display: flex;
     justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
     flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
 }
 
 .column {
