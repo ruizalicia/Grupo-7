@@ -112,28 +112,79 @@ header {
     }
 }
 
-.card h-100{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* centra las tarjetas horizontalmente */
-    padding: 20px;
-    gap: 20 px;
-    background-color: #d24d0b;
+/*aquí comienza el estilo de las cards*/
+section {
+    padding: 0 200px; /* Espaciado a ambos lados de la sección */
+}
+
+.row {
+    display: flex; /* Usa Flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
 }
 
 .card {
-    background-color: #d24d0b;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px; /* Espacio dentro de cada tarjeta */
-    margin: 10px; /* Espacio fuera de cada tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Ancho de las tarjetas */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    color: #2571b2; /* Color del texto */
+    margin: 0 15px; /* Espaciado entre tarjetas */
 }
 
-footer{
-    background-color:#2571b2;
+.card-img-top {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
+
+/*Aquí comienza el estilo del footer*/
+.footer {
+    background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
+    padding: 20px 0; /* Espaciado superior e inferior */
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+}
+
+.column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.column h3{
+    font-weight: bolder;
+}
+
+/* Opcional: Ajustar el tamaño de las imágenes si es necesario */
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos, ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
+}
