@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+  /* Estilo para los enlaces de navegación */
+.navbar a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
+    font-weight: regular;
+    padding: 10px 15px;
+    text-indent: 2px;
+    text-size-adjust: auto;
+}
+
+  /* Hover effect para los enlaces */
+.navbar a:hover {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+  /* Alineación de los elementos */
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+    }
+
+    .navbar .menu {
+    flex-direction: row;
+    width: 100%;
+    }
+
+    .navbar a {
+    margin: 10px 0;
+    }
+}
+
+/* Botones de registro e inicio de sesión */
+.auth-links button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.auth-links button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-links button {
+        margin-top: 10px;
+    }
+}
+
+.hero-section {
+    display: block;
+    position: relative;
+    width: 300px;
+}
+.hero-section h1 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: 100%;
+    font-size: 25px;
+    color: #8ecae6;
+}
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+.testimonios h1{
+    text-align: center;
+    font-weight: 700;
+    padding: 33px;
+    font-size: 26px;
+    color: #D1460B;
+}
+
+.testimonios h2{
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    color: #111111;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+.blog h1{
+    text-align: center;
+    font-weight: 700;
+    padding: 33px;
+    font-size: 26px;
+    color: #D1460B;
+}
+
+.blog h2{
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    color: #111111;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    background-color: #2571BC;
+    padding: 20px 0;
+}
+
+.logo_footer{
+    display: flex;
+    flex-direction: normal;
+    align-items: center;
+}
+
+.information h1{
+    display: flex;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.information p{
+    width: 80%;
+    font-size: 18px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.networks{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center; 
+    background-color: #2571BC;
+}
+
+.networks img{
+    margin: 0 10px;
+    width: 30px; 
+    height: auto;
+    justify-content: center; 
+}
+
+
+
