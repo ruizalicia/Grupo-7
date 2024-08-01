@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.sobre-nosotros img, .mision img, .nuestro-equipo img {
+    width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #002E5D; 
+    color: white; 
+    padding: 40px 0;
+}
+
+footer .contacto p, footer .redes-sociales img {
+    margin-bottom: 10px;
+    color: white; 
+}
+
+footer .redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+footer .redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: white; 
+}
