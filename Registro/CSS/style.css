@@ -1,58 +1,74 @@
-/* General reset and styling */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background-color: #fff;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para la barra de navegación */
 .navbar {
-  background-color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-/* Estilo para los enlaces de navegación */
+
+  /* Estilo para los enlaces de navegación */
 .navbar a {
-  color: #007BFF;
-  text-decoration: none;
-  font-size: 16px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
-  font-weight: regular;
-  padding: 10px 15px;
-  text-indent: 2px;
-  text-size-adjust: auto;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
+    font-weight: regular;
+    padding: 10px 15px;
+    text-indent: 2px;
+    text-size-adjust: auto;
 }
 
-/* Hover effect para los enlaces */
+  /* Hover effect para los enlaces */
 .navbar a:hover {
-  color: #0056b3;
-  font-weight: bold;
+    color: #0056b3;
+    font-weight: bold;
 }
 
-/* Alineación de los elementos */
+  /* Alineación de los elementos */
 .navbar .menu {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .navbar .menu {
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .navbar a {
+    margin: 10px 0;
+    }
 }
 
 /* Botones de registro e inicio de sesión */
@@ -67,39 +83,39 @@ header {
 }
 
 .auth-links button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-  }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .navbar .menu {
-      flex-direction: column;
-      width: 100%;
-  }
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .navbar a {
-      margin: 10px 0;
-  }
+    .navbar a {
+        margin: 10px 0;
+    }
 
-  .auth-links {
-      flex-direction: column;
-      align-items: flex-start;
-  }
+    .auth-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .auth-links button {
-      margin-top: 10px;
-  }
+    .auth-links button {
+        margin-top: 10px;
+    }
 }
 
 * {box-sizing: border-box}
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+  input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -118,8 +134,8 @@ hr {
   margin-bottom: 25px;
 }
 
-/* Set a style for all buttons inside forms */
-form button {
+/* Set a style for all buttons */
+button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -130,8 +146,8 @@ form button {
   opacity: 0.9;
 }
 
-form button:hover {
-  opacity: 1;
+button:hover {
+  opacity:1;
 }
 
 /* Extra styles for the cancel button */
@@ -147,7 +163,7 @@ form button:hover {
 }
 
 /* Add padding to container elements */
-.container {
+.containerform {
   padding: 16px;
 }
 
@@ -165,7 +181,51 @@ form button:hover {
   }
 }
 
-/* Aquí comienza el estilo del footer */
+/* Estilo para los botones del formulario */
+form button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+form button:hover {
+  opacity: 1;
+}
+
+/* Estilo para el encabezado y párrafo en el formulario */
+form h1 {
+  margin-bottom: 15px;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form hr {
+  margin-bottom: 25px;
+}
+
+/* Ajuste de los campos de entrada del formulario */
+form input[type=text], form input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+form input[type=text]:focus, form input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/*Aquí comienza el estilo del footer*/
 .footer {
   background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
   padding: 20px 0; /* Espaciado superior e inferior */
@@ -187,7 +247,7 @@ form button:hover {
   font-family: "Open Sans", sans-serif;
 }
 
-.column h3 {
+.column h3{
   font-weight: bolder;
 }
 
@@ -222,4 +282,3 @@ form button:hover {
   margin-top: 10px; /* Espaciado superior */
   color: #fff;
 }
-
