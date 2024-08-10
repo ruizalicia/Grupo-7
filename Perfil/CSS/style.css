@@ -10,107 +10,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para la barra de navegación */
-.navbar {
-    background-color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-/* Estilo para los enlaces de navegación */
-.navbar a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 16px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
-    font-weight: regular;
-    padding: 10px 15px;
-    text-indent: 2px;
-    text-size-adjust: auto;
-}
-
-  /* Hover effect para los enlaces */
-.navbar a:hover {
-    color: #0056b3;
-    font-weight: bold;
-}
-
-  /* Alineación de los elementos */
-.navbar .menu {
-    display: flex;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    }
-
-    .navbar .menu {
-    flex-direction: column;
-    width: 100%;
-    }
-
-    .navbar a {
-    margin: 10px 0;
-    }
-}
-
-/* Botones de registro e inicio de sesión */
-.auth-links button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 4px;
-}
-
-.auth-links button:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar .menu {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-    }
-
-    .auth-links {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .auth-links button {
-        margin-top: 10px;
-    }
-}
-
 /*aquí comienza el estilo de las cards*/
 section {
     padding: 0 120px; /* Espaciado a ambos lados de la sección */
@@ -123,12 +22,29 @@ section {
 }
 
 .card {
-    margin: 0 15px; /* Espaciado entre tarjetas */
+    margin: 0 5px; /* Espaciado entre tarjetas */
 }
 
 .card-img-top {
     width: 100%; /* Asegura que la imagen se ajuste al contenedor de la tarjeta */
     height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos específicos para las cards dentro del acordeón */
+.accordion-body .row {
+    display: flex; /* Alineación en fila */
+    justify-content: space-between; /* Espacio entre las columnas */
+    flex-wrap: nowrap; /* Evita que las columnas se envuelvan a la siguiente línea */
+    gap: 15px;
+}
+
+.accordion-body .col-sm-4 {
+    flex: 1 0 30%; /* Asegura que cada tarjeta ocupe aproximadamente un tercio del espacio */
+    max-width: 30%; /* Limita el ancho máximo de cada tarjeta */
+}
+
+.accordion-body .card {
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
 }
 
 
