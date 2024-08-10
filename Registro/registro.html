@@ -31,31 +31,36 @@
         </nav>
     </header>
 
-    <form action="action_page.php" style="border:1px solid #ccc">
-        <div class="containerform">
-            <h1>Registro</h1>
-            <p>Completa la siguiente forma para crear una cuenta.</p>
-            <hr>
+    <form action="action_page.php">
+        <h1>Registro</h1>
+        <p>Completa la siguiente forma para crear una cuenta.</p>
+        <hr>
 
-            <label for="email"><b>Correo</b></label>
-            <input type="text" placeholder="Escribe un correo" name="email" required>
+        <div class="mb-3">
+            <label for="email" class="form-label"><b>Correo</b></label>
+            <input type="email" id="email" class="form-control" placeholder="Escribe un correo" name="email" required>
+        </div>
 
-            <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Escribe una contraseña" name="psw" required>
+        <div class="mb-3">
+            <label for="psw" class="form-label"><b>Contraseña</b></label>
+            <input type="password" id="psw" class="form-control" placeholder="Escribe una contraseña" name="psw" required>
+        </div>
 
-            <label for="psw-repeat"><b>Repite contraseña</b></label>
-            <input type="password" placeholder="Escribe contraseña" name="psw-repeat" required>
+        <div class="mb-3">
+            <label for="psw-repeat" class="form-label"><b>Repite contraseña</b></label>
+            <input type="password" id="psw-repeat" class="form-control" placeholder="Escribe contraseña" name="psw-repeat" required>
+        </div>
 
-            <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recordarme
-            </label>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember" checked="checked" name="remember">
+            <label class="form-check-label" for="remember">Recordarme</label>
+        </div>
 
-            <p>Creando una cuenta estás de acuerdo con nuestros <a href="#" style="color:dodgerblue">Términos y condiciones de Privacidad</a>.</p>
+        <p>Creando una cuenta estás de acuerdo con nuestros <a href="#" style="color:dodgerblue">Términos y condiciones de Privacidad</a>.</p>
 
-            <div class="clearfix">
-                <button type="button" class="cancelbtn">Cancelar</button>
-                <button type="submit" class="signupbtn">Registrar</button>
-            </div>
+        <div class="clearfix">
+            <button type="button" class="btn btn-secondary">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Registrar</button>
         </div>
     </form>
 

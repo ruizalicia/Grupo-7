@@ -282,3 +282,51 @@ form input[type=text]:focus, form input[type=password]:focus {
   margin-top: 10px; /* Espaciado superior */
   color: #fff;
 }
+
+/* Estilos del formulario */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form .form-check-label {
+  margin-bottom: 15px;
+}
+
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clearfix .btn {
+  width: 48%;
+}
