@@ -4,31 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ENCABEZADO</title>
-    <link rel="stylesheet" href="ESTILOSL.CSS">
+    <link rel="stylesheet" href="CSS/ESTILOSL.CSS">
     
 </head>
 <body>
 	<!---creacion del navegador-->
-	<header>
-            <div="logo_navbar">
-                <img src="logo_navbar.png"></div>
-            <nav><b>
-            <a  style="color: #ea7700";href="#" class="nav-link">inicio</a>
-            <a  style="color: #ea7700";href="#" class="nav-link">Sobre Nosotros</a>
-            <a  style="color: #ea7700";href="#" class="nav-link">Tours</a>
-            <a  style="color: #ea7700";href="#" class="nav-link">Experiencias</a>
-            <a  style="color: #ea7700"; href="#" class="nav-link">Blog & Testimonios</a>
-            <a  style="color: #ea7700"; href="#" class="nav-link">Galeria</a>
-            </b></nav>
-            <nav>
-            <b><a style="color: #ea7700";href="#" class="nav-link" style="background-color: #2571bc ;">Registrarte</a></b>
-            <b><a  style="color: #ea7700";href="#" class="nav-link" style="background-color: #2571bc; ">Iniciar Sesión</a></b>
-            </nav>
-	</header>
+
+    <nav class="barra de navegación">
+        <div class="logo">
+            <img src="PNG/logo_navbar.png"Recorriendo mi pulgarcito">
+        </Div>
+        <ul class="enlaces-nav">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Experiencias</a></li>
+            <li><a href="#">Blog & Testimonios</a></li>
+            <li><a href="#">Galería</a></li>
+        </Ul>
+        <div class="enlaces-de autenticación">
+            <a href="#" class="register">Registrarte</a>
+            <a href="#" class="login">Iniciar Sesión</a>
+        </Div>
+    </Nav>
+
     <!----imagen bienvenida--->
 
         <div class="container">
-        <img class="containerimg" src="Imagén_Bienvenida.png" alt="Snow" style="width:100%">
+        <img class="containerimg" src="PNG/Imagén_Bienvenida.png" alt="Snow" style="width:100%">
             <!---texto dentro de imagen-->
         <center><div class="text1" style="color: #fff;">"VIVE EL SALVADOR COMO NUNCA ANTES"</div></b></center>
             <!--slogan-->
@@ -49,20 +52,21 @@
             <p> Al abrir una cuenta, accederás a beneficios exclusivos </p>
                 que harán de tu viaje una aventura inolvidable.</P><br>
                         <!--boton-->
-                <button    class="button" style="vertical-align:middle" name="Registrate Ahora"  onclick="location.href"="https"><span>"Registrate Ahora" </span></button>
+                <button    class="button" style="vertical-align:middle" name="Registrate Ahora" 
+                onclick="location.href"="https"><span>"Registrate Ahora" </span></button>
         </div>
         <div class="DERECHA">
             
-                <img class="logo1" src="acceso_anticipado.png">
+                <img class="logo1" src="PNG/acceso_anticipado.png">
                 <h4 style="color:#ffb703;"> Acceso Anticipado</h4>
                 <p>Sé el primero en conocer y reservar nuevas experiencias y tours antes de que se publiquen al público general.</p>
-                <img class="logo2" src="descuentos_exclusivos.png">
+                <img class="logo2" src="PNG/descuentos_exclusivos.png">
                 <h4 style="color:#ffb703;">Descuentos Exclusivos</h4>
                 <P>Obtén acceso a descuentos especiales y ofertas exclusivas en tours y experiencias</P>
-                <img class="logo3" src="Atencion_cliente.png">
+                <img class="logo3" src="PNG/Atencion_cliente.png">
                 <H4 style="color:#ffb703;">Atención Prioritaria al Cliente </H4>
                 <p> Recibe asistencia rápida y dedicada para resolver cualquier duda o inconveniente durante tu viaje.</p>
-                <img class="logo4" src="Recomendaciones_Personalizadas.png">
+                <img class="logo4" src="PNG/Recomendaciones_Personalizadas.png">
                 <h4 style="color:#ffb703;"> Recomendaciones Personalizadas</h4>
                 <P> Descubre experiencias únicas y crea un itinerario a tu medidad</P>
             
@@ -75,7 +79,7 @@
 <!--sección sobre nosotros-->
         <section id="section2" class="section2">
         <div class="imagen">
-        <img class="sobre_nosotrosimg" src="sobre_nosotros.png" >
+        <img class="sobre_nosotrosimg" src="PNG/sobre_nosotros.png" >
         </div>
         <div class="textoderecho">
         <h2 class="parrafonos" style="color: #2571bc">Sobre Nosotros</h2> <br><br><br>   
@@ -117,18 +121,18 @@
             <br>
         </div>
         <div class="imgtazumal"> 
-            <img class="imgtazu" src="ruinas_tazumal.png">
+            <img class="imgtazu" src="PNG/ruinas_tazumal.png">
         </div>
-        <div  class="imgjuayua"><img class="imgju" src="cascadas_juayua.png"></div>
+        <div  class="imgjuayua"><img class="imgju" src="PNG/cascadas_juayua.png"></div>
     </section>
     <!---seccion de experiencias-->
     <section id="SECTION4" class="SECTION4">
         <div class="imgiz">
         </div>
         <div class="imgrutacafe"> 
-            <img class="rutacafe" src="ruta_del_cafe.png">
+            <img class="rutacafe" src="PNG/ruta_del_cafe.png">
         </div>
-        <div  class="cerro"><img class="imgcerro" src="El_Pital.png"></div>
+        <div  class="cerro"><img class="imgcerro" src="PNG/El_Pital.png"></div>
     </section>
     </div>
 
@@ -141,14 +145,35 @@
             </P>
     </section>
     </div>
+
     <!--seccion de nuestros clientes-->
     <h2>Nuestros Clientes</h2>
     <p>reseña de experiencias</p>
-    <img class="fotocliente1" src="Usuario_1.png">
-    <p>reseña de experiencias</p>
-    <img class="fotocliente2" src="fotocliente">
-    <p>reseña de experiencias</p>
-    <img class="fotocliente3" src="fotocliente">
+    <img class="fotocliente1" src="PNG/reseña6.jpg">
+    <h2>Raily Stuart</h2>
+    <h3>Aventura en el Volcán de Izalco</h3>
+        <h4>Parque Nacional Los Volcanes, Departamento de Sonsonate, El Salvador.</h4>
+            <p>Este fue el  mejor paisaje del volcán que vi. Se puede ver este volcán desde 
+            la carretera, el lago de Coatepeque y el océano pacífico en un día despejado. 
+            Un lugar perfecto para sacar buenas fotos entre amigos y familia.</p>
+
+    <img class="fotocliente2" src="PNG/reseña9.jpg">
+    <h2>Nataly Ramos</h2>
+    <h3>Tour de las Ruinas de Tazumal y Chalchuapa</h3>
+        <h4>Tazumal y Chalchuapa, Departamento de Santa Ana, El Salvador</h4>
+            <p>Perfecto para conocer más sobre nuestra historia pues aparte de un tour en que 
+            puedes recorrer todo el lugar el guía se encarga de contar la historia de las personas 
+            que habitaron en el y como fue descubierto este bello lugar.</p>
+
+    <img class="fotocliente3" src="PNG/reseña4.jpg">
+
+    <h2> Hector Celas</h2>
+    <h3> Ruta del Café en Apaneca</h3>
+        <h4>Apaneca, Departamento de Ahuachapán, El Salvador</h4>
+            <p>Increíble y exquisita experiencia, tuve la oportunidad de ver de primer mano cómo se
+            cosecha café, también pude degustarlo, sin duda me llevo conmigo el sabor del café que 
+            aquí se cosecha. Ya estoy deseando volver.</p>
+
 
 <!--seccion blog y noticias-->
 <p>descubre las últimas novedades del turismo en El Salvador.
@@ -158,12 +183,12 @@
 </p>
 <section id="SECTION5" class="SECTION5">
     <div class="contizq">
-        <h1 class="pre1";>¿Cómo hacer senderismode forma segura en El Salvador?</h1>
-        <P>si estas planeando dubir un cerro o visitar una montaña con amigos y familiares debes seguir 
+        <h1 class="pre1";>¿Cómo hacer senderismo de forma segura en El Salvador?</h1>
+        <P>si estas planeando subir un cerro o visitar una montaña con amigos y familiares debes seguir 
             estas recomendaciones para hacer turismo de forma segura y precavida
         </P>
         <button  class="buttonleermas" style="vertical-align:middle" name="Leer más"  
-        onclick="location.href"="https"><span>"Leer más" </span></button>
+        onclick="location.href"="https"><span>" Leer más " </span></button>
 
         <h1 class="pre2";> Suchitoto invita al XVIII Festival de Alcatares de la Cruz</h1>
         <P> Las actividades ae desarrollarán el viernes 3 y el sábado 4 de mayo. 
@@ -191,14 +216,40 @@
     <div class="grupo1">
         <div class="box">
             <figure>
-                <img class="logofeet" src="logo_footer.png">
+                <img class="logofeet" src="PNG/logo_footer.png">
             </figure>
         </div>
-        <div class="box">
-        
+        <div> 
+            <h5>Dirección</h5>
+            <p>Edificio Century Tower, Nivel 10 y 11 #243 Col. San Benito San Salvador CP,1101</p>
+            <h5>Horario</h5>
+            <p>Lunes a Viernes: 8:00 am - 5:00 pm</p>
+            <h5>Telefono</h5>
+            <p> +503 2257-7777</p>
+            <h5>CORREO</h5>
+            <p> Recorriendo@mipulgarcito.com</p>
+        </div>
+        <div>
+            <h5>Acerca de</h5>
+            <p> sobre nosotros</p>
+            <p> Blog</p>
+            <p> Destinos populares</p>
+            <p> Experiencias</p>
         </div>
 
-
+        <div>
+            <h5>Información Legal</h5>
+            <p> Terminos y Condiciones</p>
+            <p> Politica y Privacidad</p>
+            <p> FAQ</p>
+        </div>
+        <div class="box">
+            <img src="PNG/whatsapp.png" alt="">
+            <img src="PNG/spotify.png" alt="">
+            <img src="PNG/twitter.png" alt="">
+            <img src="PNG/facebook.png" alt="">
+            <img src="PNG/linkedin.png" alt="">
+        </div>
     </div>
 </footer>
 </body>
