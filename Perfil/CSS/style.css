@@ -60,6 +60,23 @@ section {
     margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
 }
 
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+
 .container {
     display: flex;
     justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
@@ -76,6 +93,13 @@ section {
 }
 
 .column h3{
+    font-weight: bolder;
+}
+
+.columm h3 ul{
+    font-weight: bolder;
+}
+.column h5{
     font-weight: bolder;
 }
 
@@ -102,7 +126,9 @@ section {
 
 .footer-separator {
     border-top: 1px solid #ccc; /* Línea separadora */
-    margin: 20px 0; /* Espaciado superior e inferior */
+    width: 80%; /* Ancho de la línea (puedes ajustar el valor) */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
 }
 
 .copyright {
