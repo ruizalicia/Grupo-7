@@ -3,30 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>
+	<title>ENCABEZADO</title>
     <link rel="stylesheet" href="CSS/ESTILOSL.CSS">
-    
+    <link rel="stylesheet" href="CSS/footer.css"
+    <link rel="stylesheet" href="CSS/navbar.css">  
 </head>
 <body>
 	<!---creacion del navegador-->
 
-    <nav class="barra de navegación">
-        <div class="logo">
-            <img src="PNG/logo_navbar.png"Recorriendo mi pulgarcito">
-        </Div>
-        <ul class="enlaces-nav">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Experiencias</a></li>
-            <li><a href="#">Blog & Testimonios</a></li>
-            <li><a href="#">Galería</a></li>
-        </Ul>
-        <div class="enlaces-de autenticación">
-            <a href="#" class="register">Registrarte</a>
-            <a href="#" class="login">Iniciar Sesión</a>
-        </Div>
-    </Nav>
+    <header class="mb-4">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="PNG/logo_navbar.png" alt="Recorriendo mi pulgarcito">
+            </div>
+            <ul class="nav justify-content-center">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#">Blog & Testimonios</a></li>
+                <li><a href="#">Galería</a></li>
+            </ul>
+            <div class="auth-links">
+                <button><a href="/Registro/registro.html">Registro</a></button>
+                <button><a href="/Inicio de Sesión/login.html">Inicio de Sesión</a></button>
+            </div>
+        </nav>
+    </header>
 
     <!----imagen bienvenida--->
 
@@ -210,46 +213,54 @@
     </div>
 </section>
 
-
 <!--creación de footer-->
-<footer class="pie_pagina" class="text_dark">
-    <div class="grupo1">
-        <div class="box">
-            <figure>
-                <img class="logofeet" src="PNG/logo_footer.png">
-            </figure>
-        </div>
-        <div> 
-            <h5>Dirección</h5>
-            <p>Edificio Century Tower, Nivel 10 y 11 #243 Col. San Benito San Salvador CP,1101</p>
-            <h5>Horario</h5>
-            <p>Lunes a Viernes: 8:00 am - 5:00 pm</p>
-            <h5>Telefono</h5>
-            <p> +503 2257-7777</p>
-            <h5>CORREO</h5>
-            <p> Recorriendo@mipulgarcito.com</p>
-        </div>
-        <div>
-            <h5>Acerca de</h5>
-            <p> sobre nosotros</p>
-            <p> Blog</p>
-            <p> Destinos populares</p>
-            <p> Experiencias</p>
-        </div>
 
-        <div>
-            <h5>Información Legal</h5>
-            <p> Terminos y Condiciones</p>
-            <p> Politica y Privacidad</p>
-            <p> FAQ</p>
+<footer class="footer">
+    <div class="container">
+        <div class="column">
+            <img src="PNG/logo_footer.png" alt="Recorriendo mi Pulgarcito Logo" style="width: 200px;">
         </div>
-        <div class="box">
-            <img src="PNG/whatsapp.png" alt="">
-            <img src="PNG/spotify.png" alt="">
-            <img src="PNG/twitter.png" alt="">
-            <img src="PNG/facebook.png" alt="">
-            <img src="PNG/linkedin.png" alt="">
+        <div class="column">
+            <h5>Dirección:</h5>
+            <p>Edificio Century Tower, Nivel 10 y 11 #243 Col. San Benito San Salvador CP, 1101</p>
+            <h5>Horario:</h5>
+            <p>Lunes a viernes: 8:00 am - 5:00 pm</p>
+            <h5>Teléfono:</h5>
+            <p>+503 2257-7777</p>
+            <h5>Correo:</h5>
+            <p>recorriendo@mipulgarcito.com</p>
         </div>
+        <div class="column">
+            <h3>Acerca de</h3>
+            <ul>
+                <li>Sobre nosotros</li>
+                <li>Blog</li>
+                <li>Destinos populares</li>
+                <li>Experiencias</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Información Legal</h3>
+            <ul>
+                <li>Términos y condiciones</li>
+                <li>Política de Privacidad</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Línea separadora -->
+    <div class="footer-separator"></div>
+
+    <div class="social-icons">
+        <a href="#"><img src="PNG/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="PNG/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="PNG/spotify.png" alt="Spotify"></a>
+        <a href="#"><img src="PNG/whatsapp.png" alt="whatsapp"></a>
+        <a href="#"><img src="PNG/linkedin.png" alt="linkedin"></a>
+    </div>
+    <div class="copyright" >
+        &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
     </div>
 </footer>
 </body>
