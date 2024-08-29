@@ -216,58 +216,85 @@ color: #252525;
     padding: 29px;
 }
 
-footer{
-    background-color: #2571b2;
-    padding: 20px 0;
-    margin-top: 40px;
+.footer {
+    background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
 }
 
-.logo_footer{
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+
+.container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
 }
 
-.information{
-    flex: 1;
-    margin: 0 10px;
-    min-width: 200px;
+.column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
     color: #fff;
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
-.information h1{
+
+.column h3{
     font-weight: bolder;
 }
-.information img{
+
+.columm h3 ul{
+    font-weight: bolder;
+}
+.column h5{
+    font-weight: bolder;
+}
+
+/* Opcional: Ajustar el tamaño de las imágenes si es necesario */
+.column img {
     max-width: 100%;
     height: auto;
 }
 
-.networks{
-   display: flex;
-   justify-content: center;
-   margin: 20px 0;
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
 }
 
-.networks a{
-    margin: 0 20px;
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
 }
 
-.networks img{
-    width: 35px; 
-    height: auto;
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos, ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción del icono */
 }
 
-.footer-separador {
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea (puedes ajustar el valor) */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
 }
 
 .copyright {
-    text-align: center;
-    margin-top: 10px;
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
     color: #fff;
 }
-
-
