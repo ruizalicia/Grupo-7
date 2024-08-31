@@ -6,7 +6,6 @@
 }
 
 body {
-    align-items: center;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -86,7 +85,6 @@ header {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -109,4 +107,4 @@ header {
     .auth-links button {
         margin-top: 10px;
     }
-}
+

@@ -2,168 +2,6 @@ body{
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
-.Barra de navegación {
-    display: Flex;
-    justify-content: espacio-entre;
-    align-items: centro;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.Logotipo IMG {
-    height: 50px;
-}
-
-.Enlaces-nav {
-    list-style:ninguno;
-    display: Flex;
-    white-space: 20px;
-}
-
-    .Nav-Links Li {
-    padding: 14px 20px;
-}
-
-.Nav-Links A {
-    text-decoration: ninguno;
-    Color: #000;
-    font-size: 16px;
-    font-weight: negrita;
-}
-
-.Enlaces de navegación a:hover {
-    Color: #FF5733;
-}
-
-.enlaces de autenticación {
-    display: Flex;
-    white-space: 10px;
-}
-
-.auth-links a {
-    text-decoration: ninguno;
-    Color: #FFF;
-    background-color: #007BFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.enlaces de autenticación .registro {
-    background-color: #28a745;
-}
-
-.enlaces de autenticación .Regístrese:Pase el cursor,
-.enlaces de autenticación .inicio de sesión:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
         .container{
             background-image: url(Imagén_Bienvenida.png);
@@ -172,6 +10,7 @@ body{
             text-align: center;
             padding-left: 15px;
             height: auto;
+            width: 100%;
 
         }
         .image{
@@ -296,14 +135,12 @@ body{
                 opacity: 1;
                 right: 0;
             }
-            .izquierda {
+            .izquierda 
+            {
             height: 100%;
             background-color: #ffb703;
             padding: 70PX;
             width: auto;
-            margin: 5PX;
-            
-
         }
         
         
@@ -337,7 +174,6 @@ body{
                 background-position: center;
                 background-size: cover;
                 width: 78%;
-                margin: 5px;
                 padding: 30px;
             }
             .SECTION1{
@@ -347,21 +183,13 @@ body{
             
             .logo2{
                 width: 50px;
+                align-items: center;
             }
             .logo3{
                 width: 50px;
             }
             .logo4{
                 width: 50px;
-            }
-            .pie_pagina{
-                background-color: #2571bc;
-                align-items: center;
-            }
-            .logofeet{
-                height: auto;
-                align-items: center;
-                padding: 15px;
             }
                 .sobre_nosotrosimg{
                     background-size: cover;
@@ -408,41 +236,7 @@ body{
                         .section2{
                             display: flex;
                             }
-                
-                            .textizqui{
-                                background-color: #ea7700;
-                                color: #fff;
-                                padding: 5%;
-                                width: 500px;
-                                margin: bottom 5px; ;
-                            }
-                            .imgtazumal{
-                                background-color: #8ecae6;
-                                height: auto;
-                                width: 400px;
-                                padding-top: 5px;
-                        
-                            }
-                            .SECTION3{
-                                display: flex;
-                            }
-                            .imgtazu{
-                                display: flex;
-                                height: auto;
-                                width: 400px;
-                                padding-top: 75px;
-                            }
-                            .imgjuayua{
-                                display: flex;
-                                background-color: #ea7700;
-                                height: auto;
-                                padding: 5%;
-                                width: 400px;
-                            }
-                            .imgju{
-                                width: 400px;
-                                height: auto;
-                            }
+                            
 
 
                             .buttonleermas {
@@ -497,3 +291,139 @@ body{
                                 width: auto;
                                 height: 200px;
                             }
+                            
+                            .line-separator {
+                                border-top: 1px solid #fff; /* Línea separadora */
+                                width: 80%; /* Ancho de la línea (puedes ajustar el valor) */
+                                height: 5px; /* Grosor de la línea */
+                                margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
+                            }
+                            .flex-container{
+                                display: flex;
+                                flex-flow: row wrap;
+                            }
+                            .flex-container div{
+                                margin: 0%;}
+
+                                .flex-container1{
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                }
+                                .flex-container1 div{
+                                    margin: 0%;
+                                    align-items: center;
+                                    
+                                }
+                                .flex-container2{
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                }
+                                .flex-container2 div{
+                                    margin: 0%;
+                                    align-items: center;
+                                    
+                                }.flex-container3{
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                }
+                                .flex-container1 div{
+                                    margin: 0%;
+                                    align-items: center;
+                                    
+                                }
+                                .nclient{
+                                    color: #2571bc;
+                                    align-items: center;
+                                }
+/* diseños de css de mi destinos detscados*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.featured-destinations {
+    background-color: #ea7700;
+    color: #0277bd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-destinations h2 {
+    color: #ff8f00;
+    margin-bottom: 1rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination {
+    background-color: #ea7700;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    margin-top: 0.5rem;
+    color: #0277bd;
+}
+
+.destination p {
+    color: #666;
+}
+
+* diseños de css de mi destinos detscados*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.featured-destinations {
+    background-color: #ea7700;
+    color: #0277bd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-destinations h2 {
+    color: #ff8f00;
+    margin-bottom: 1rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination {
+    background-color: #ea7700;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    margin-top: 0.5rem;
+    color: #0277bd;
+}
+
+.destination p {
+    color: #666;
+}

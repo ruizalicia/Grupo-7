@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>HOME</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ENCABEZADO</title>
     <link rel="stylesheet" href="CSS/ESTILOSL.CSS">
-    <link rel="stylesheet" href="CSS/footer.css"
-    <link rel="stylesheet" href="CSS/navbar.css">  
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/CSSCARRUSEL.css">
+    <link rel="stylesheet" href="CSS/desti.css">
 </head>
 <body>
 	<!---creacion del navegador-->
@@ -59,18 +60,33 @@
                 onclick="location.href"="https"><span>"Registrate Ahora" </span></button>
         </div>
         <div class="DERECHA">
-            
-                <img class="logo1" src="PNG/acceso_anticipado.png">
-                <h4 style="color:#ffb703;"> Acceso Anticipado</h4>
-                <p>Sé el primero en conocer y reservar nuevas experiencias y tours antes de que se publiquen al público general.</p>
-                <img class="logo2" src="PNG/descuentos_exclusivos.png">
-                <h4 style="color:#ffb703;">Descuentos Exclusivos</h4>
+            <div class="flex-container">
+                <div><img class="logo1" src="PNG/acceso_anticipado.png"></div>
+                <div><h4 style="color:#ea7700;"> Acceso Anticipado</h4></div>
+                <div><p>Sé el primero en conocer y reservar nuevas experiencias y tours antes de que se publiquen al público general.</p></div>
+            </div>
+                        <!-- Línea separadora -->
+                        <div class="line-separator"></div>
+                <div class="flex-container1">
+                <div><img class="logo2" src="PNG/descuentos_exclusivos.png"></div>
+                <div><h4 style="color:#ea7700;">Descuentos Exclusivos</h4></div>
+                </div>
                 <P>Obtén acceso a descuentos especiales y ofertas exclusivas en tours y experiencias</P>
-                <img class="logo3" src="PNG/Atencion_cliente.png">
-                <H4 style="color:#ffb703;">Atención Prioritaria al Cliente </H4>
-                <p> Recibe asistencia rápida y dedicada para resolver cualquier duda o inconveniente durante tu viaje.</p>
-                <img class="logo4" src="PNG/Recomendaciones_Personalizadas.png">
-                <h4 style="color:#ffb703;"> Recomendaciones Personalizadas</h4>
+                
+
+                        <!-- Línea separadora -->
+                        <div class="line-separator"></div>
+                <div class="flex-container2">
+                <div><img class="logo3" src="PNG/Atencion_cliente.png"></div>
+                <div><H4 style="color:#ea7700;">Atención Prioritaria al Cliente </H4></div>
+                <div><p> Recibe asistencia rápida y dedicada para resolver cualquier duda o inconveniente durante tu viaje.</p></div>
+                </div>
+                        <!-- Línea separadora -->
+                        <div class="line-separator"></div>
+                <div class="flex-container3">
+                <div><img class="logo4" src="PNG/Recomendaciones_Personalizadas.png"></div>
+                <div><h4 style="color:#ea7700;"> Recomendaciones Personalizadas</h4></div>
+                </div>
                 <P> Descubre experiencias únicas y crea un itinerario a tu medidad</P>
             
         </div>
@@ -111,72 +127,121 @@
 
 </section>
 <!--SECCIÒN DESTINOS DESTACADOS-->
-<h1 style="color: #2571bc;"><center>Destinos Destacados</center></h1>
-<!----parrafo de tours seccion izquierda--->
-    <section id="SECTION3" class="SECTION3">
-        <div class="textizqui">
-            <h1 class="textiz";>Tours</h1>
-            <P>Explora las maravillas de El Salvador con nuestros tours guiados.
+
+<section class="featured-destinations">
+    <h2>Destinos destacados</h2>
+    <div class="destination-grid">
+        <div class="destination">
+            <h6 style="color: #ea7700;" class="hola">hola</h6>
+            <br>
+            <br>
+            <br>
+            <h1>Tours</h1>
+            <br>
+            <h3 style="color: white;">Explora las maravillas de El Salvador con nuestros tours guiados.
                 Desde ruinas mayas hasta paisajes volcánicos y ciudades vibrantes, 
                 nuestros itinerarios te ofrecen una experiencia enriquecedora y memorable.
                 ¡Acompañame y vive la aventura!
-            </P>
+            </h3>
+        </div>
+        <div class="destination">
+            <img src="PNG/ruinas_tazumal.png" alt="Ruinas de Tazumal">
+            <h3>Ruinas de Tazumal</h3>
+            <p>Descubre la historia antigua en las ruinas de Tazumal.</p>
+        </div>
+        <div class="destination">
+            <img src="PNG/cascadas_juayua.png" alt="Cascadas de Juayua">
+            <h3>Cascadas de Juayua</h3>
+            
+        </div>
+        <div class="destination">
+            <img src="PNG/ruta_del_cafe.png" alt="Ruta del Café en Ahuachapán">
+            <h3>Ruta del Café en Ahuachapán</h3>
+            <p>Experimenta el proceso del café en Ahuachapán.</p>
+        </div>
+        <div class="destination">
+            <img src="PNG/El_Pital.png" alt="El Pital Chalatenango">
+            <h3>El Pital Chalatenango</h3>
+            <p>Visita el punto más alto de El Salvador en El Pital.</p>
+        </div>
+        <div class="destination">
+            <h6 style="color:#ea7700;" class="hola">hola</h6>
             <br>
-        </div>
-        <div class="imgtazumal"> 
-            <img class="imgtazu" src="PNG/ruinas_tazumal.png">
-        </div>
-        <div  class="imgjuayua"><img class="imgju" src="PNG/cascadas_juayua.png"></div>
-    </section>
-    <!---seccion de experiencias-->
-    <section id="SECTION4" class="SECTION4">
-        <div class="imgiz">
-        </div>
-        <div class="imgrutacafe"> 
-            <img class="rutacafe" src="PNG/ruta_del_cafe.png">
-        </div>
-        <div  class="cerro"><img class="imgcerro" src="PNG/El_Pital.png"></div>
-    </section>
-    </div>
-
-            <h1 class="expder";>Experiencias</h1>
-            <P>Participa activamente en actividades ùnicas que te conectan con
+            <br>
+            <br>
+            <b><h1>Experiencias</h1></b>
+            <br>
+            <h3 style="color: white;">Participa activamente en actividades ùnicas que te conectan con
                 la cultura y naturaleza de El Salvador. Desde talleres de cafè
                 hasta aventuras en kayak, nuestras experiencias te ofrecen 
                 momentos inolvidables y autenticos.
                 ¡Ùnete a la diversiòn!
-            </P>
-    </section>
+            </h3>
+        </div>
     </div>
+</section>
+
 
     <!--seccion de nuestros clientes-->
-    <h2>Nuestros Clientes</h2>
-    <p>reseña de experiencias</p>
-    <img class="fotocliente1" src="PNG/reseña6.jpg">
-    <h2>Raily Stuart</h2>
+    <SECTION class="WE-CLIENTE">
+        <section class="TESTIMONIOS">
+        <center><H1 class="nclient">Nuestros Clientes</H1><center>
+    <div class="carousel">
+        <div class="testimonial active">
+            <img class="rese6img"   src="PNG/reseña6.jpg">
     <h3>Aventura en el Volcán de Izalco</h3>
         <h4>Parque Nacional Los Volcanes, Departamento de Sonsonate, El Salvador.</h4>
             <p>Este fue el  mejor paisaje del volcán que vi. Se puede ver este volcán desde 
             la carretera, el lago de Coatepeque y el océano pacífico en un día despejado. 
             Un lugar perfecto para sacar buenas fotos entre amigos y familia.</p>
-
-    <img class="fotocliente2" src="PNG/reseña9.jpg">
-    <h2>Nataly Ramos</h2>
+            <div class="rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <p class="author">Raily Stuart</p>
+        </div>
+        <div class="testimonial">
+            <img src="PNG/reseña9.jpg" class="rese9img">
     <h3>Tour de las Ruinas de Tazumal y Chalchuapa</h3>
         <h4>Tazumal y Chalchuapa, Departamento de Santa Ana, El Salvador</h4>
             <p>Perfecto para conocer más sobre nuestra historia pues aparte de un tour en que 
             puedes recorrer todo el lugar el guía se encarga de contar la historia de las personas 
             que habitaron en el y como fue descubierto este bello lugar.</p>
+            <div class="rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <p class="author">Nataly Ramos</p>
+        </div>
+        <div class="testimonial">
+            <img src="PNG/reseña4.jpg" class="rese4img">
+            <h3> Ruta del Café en Apaneca</h3>
+                <h4>Apaneca, Departamento de Ahuachapán, El Salvador</h4>
+                    <p>Increíble y exquisita experiencia, tuve la oportunidad de ver de primer mano cómo se
+                    cosecha café, también pude degustarlo, sin duda me llevo conmigo el sabor del café que 
+                    aquí se cosecha. Ya estoy deseando volver.</p>
+            <div class="rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <p class="author">Hector Celas</p>
+        </div>
+        <button class="prev" onclick="prevTestimonial()">←</button>
+        <button class="next" onclick="nextTestimonial()">→</button>
+    </div>
 
-    <img class="fotocliente3" src="PNG/reseña4.jpg">
-
-    <h2> Hector Celas</h2>
-    <h3> Ruta del Café en Apaneca</h3>
-        <h4>Apaneca, Departamento de Ahuachapán, El Salvador</h4>
-            <p>Increíble y exquisita experiencia, tuve la oportunidad de ver de primer mano cómo se
-            cosecha café, también pude degustarlo, sin duda me llevo conmigo el sabor del café que 
-            aquí se cosecha. Ya estoy deseando volver.</p>
-
+    </section>
+    
+    </SECTION>
 
 <!--seccion blog y noticias-->
 <p>descubre las últimas novedades del turismo en El Salvador.
@@ -209,7 +274,7 @@
         onclick="location.href"="https"><span>"Leer más" </span></button>
     </div>
     <div class="imgmapa"> 
-        <img class="imgmapa" src="mapa.png">
+        <img class="imgmapa" src="https://www.google.com/maps/@13.6928802,-89.1991601,12z?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D">
     </div>
 </section>
 
@@ -263,5 +328,6 @@
         &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
     </div>
 </footer>
+
 </body>
 </html>

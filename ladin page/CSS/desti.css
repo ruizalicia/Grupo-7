@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-destinations {
+    background-color: #fff;
+    color: #0277bd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-destinations h2 {
+    color: #ff8f00;
+    margin-bottom: 1rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination {
+    background-color: #ea7700;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    margin-top: 0.5rem;
+    color: #0277bd;
+}
+
+.destination p {
+    color:white;
+}
+.h6{
+    color: #ea7700;
+}
