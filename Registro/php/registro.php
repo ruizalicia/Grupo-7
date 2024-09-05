@@ -1,6 +1,6 @@
 <?php
 // Conexión a la base de datos
-$conexion = new mysqli('localhost', 'usuario', 'contraseña', 'base_de_datos');
+$conexion = new mysqli('localhost:3306', 'kathy_guevara', 'gm151902', 'recorriendo_mi_pulgarcito');
 
 if ($conexion->connect_error) {
   die("Conexión fallida: " . $conexion->connect_error);
@@ -12,7 +12,7 @@ $email = $_POST['email'];
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT); // Encriptar la contraseña
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO usuarios (nombre, email, password) VALUES ('$nombre', '$email', '$password')";
+$sql = "INSERT INTO usuario (nombre, email, password) VALUES ('$nombre', '$email', '$password')";
 
 if ($conexion->query($sql) === TRUE) {
   echo "Registro exitoso";
