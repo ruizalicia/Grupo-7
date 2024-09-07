@@ -155,30 +155,34 @@ header {
 
 .card {
     width: 335px;
-    margin: 30px;
+    margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #8ECAE6; 
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .card img {
-    width: 100%; /* Asegura que las imágenes tengan el mismo ancho que las tarjetas */
-    height: 200px; /* Ajusta la altura según sea necesario */
+    width: 150%; /* Asegura que las imágenes tengan el mismo ancho que las tarjetas */
+    height: 300px; /* Ajusta la altura según sea necesario */
     object-fit: cover; /* Mantiene la proporción de las imágenes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block;
 }
 
 .card-body {
     margin: 15px;
+    background-color: #8ECAE6; 
 }
 
 .card-body h4 {
     font-size: 24px;
-    color: #2571BC;
+    color: #D1460B;
 }
 
 .card-body h5 {
     font-size: 21px;
-    color: #8ECAE6;
+    color: #EA7700;
 }
 .card-body h6 {
 font-size: 19;
@@ -212,10 +216,36 @@ color: #252525;
     color: #111111;
 }
 
-.tours_cards .experience_cards .blog_cards{
-    padding: 29px;
+.tours_cars .card {
+    margin-bottom: 20px;
+} 
+
+
+.button_blog button {
+    background-color: #FFB703; 
+    color: #070707;              
+    padding: 10px 20px;        
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 16px;          
+    font-weight: bold;         
+    transition: background-color 0.3s ease; 
 }
 
+.button_blogbutton:hover {
+    background-color: #EA7700; 
+}
+
+.button_blog button:active {
+    background-color: #f8d613;
+    transform: scale(0.98);    
+}
+
+.button_blog button:focus {
+    outline: none;             
+    box-shadow: 0 0 5px #D1460B; 
+}
 .footer {
     background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
     padding: 20px 0; /* Espaciado superior e inferior */
