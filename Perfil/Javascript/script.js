@@ -44,6 +44,13 @@ function updateAccountMenu() {
         registerLink.onclick = null;
     }
 }
+const dropdown = document.querySelector('.dropdown-menu');
+const rect = dropdown.getBoundingClientRect();
+
+if (rect.right > window.innerWidth) {
+    dropdown.style.left = 'auto';
+    dropdown.style.right = '0';
+}
 
 // Llamar a la función para configurar el menú al cargar la página
 updateAccountMenu();

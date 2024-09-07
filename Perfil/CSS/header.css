@@ -40,6 +40,7 @@ header {
     font-size: 16px;
     font-weight: regular;
     padding: 10px 15px;
+    margin: 0 10px; /* Aumenta la separación horizontal entre los enlaces */
     text-indent: 2px;
     text-size-adjust: auto;
 }
@@ -65,30 +66,49 @@ header {
     cursor: pointer;
 }
 
+/* Ajustes para el dropdown */
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
+    max-width: 50vw; /* Limita el ancho al 90% del viewport */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0;
     list-style: none;
+    left: 0;
+    right: auto; /* Alinea a la izquierda por defecto */
+    transform: translateX(0); /* Ajuste relativo a la posición */
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+    overflow-y: auto; /* Permite desplazamiento vertical si es necesario */
+    max-height: 80vh; /* Limita la altura del menú desplegable al 80% del viewport */
+    font-size: 14px;
 }
 
 .dropdown-menu li {
     padding: 8px 16px;
     text-align: left;
+    margin-bottom: 5px; /* Aumenta el espacio entre las opciones del dropdown */
 }
 
 .dropdown-menu li a {
     text-decoration: none;
     display: block;
     color: black;
+    font-size: 14px; /* Mantener el tamaño de fuente consistente */
+    font-weight: normal; /* Asegura que el peso de la fuente sea consistente */
+    padding: 8px 16px; /* Mantener el padding consistente */
 }
 
 .dropdown-menu li:hover {
     background-color: #ddd;
+}
+
+.dropdown-menu li a:hover {
+    font-size: 14px; /* Mantén el mismo tamaño de fuente en hover */
+    font-weight: normal; /* Asegura que el peso de la fuente no cambie */
+    color: #0056b3; /* Solo cambia el color en hover */
 }
 
 .dropdown-menu.show {
@@ -104,13 +124,14 @@ header {
     cursor: pointer;
     font-size: 14px;
     border-radius: 4px;
+    margin: 0 10px; /* Aumenta la separación horizontal entre los botones */
 }
 
 .auth-links button:hover {
     background-color: #0056b3;
 }
 
-/* Responsive */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -123,7 +144,7 @@ header {
     }
 
     .navbar a {
-        margin: 10px 0;
+        margin: 15px 0; /* Aumenta la separación vertical entre los enlaces en pantallas pequeñas */
     }
 
     .auth-links {
@@ -133,5 +154,11 @@ header {
 
     .auth-links button {
         margin-top: 10px;
+    }
+
+    /* Ajustes específicos para el dropdown en pantallas pequeñas */
+    .dropdown-menu {
+        left: auto;
+        right: 0; /* Alinea el menú al borde derecho en pantallas pequeñas */
     }
 }
