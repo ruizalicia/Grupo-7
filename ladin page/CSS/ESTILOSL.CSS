@@ -349,23 +349,24 @@ header {
                 text-align: justify;
             
             }
-            .logo1 {
-                width: 50px;
-                align-items: center;
-                
-            }
+            
             .DERECHA {
                 height: auto;
                 background-color: white;
                 background-position: center;
                 background-size: cover;
-                width: 78%;
+                width: 400%;
                 padding: 30px;
             }
             .SECTION1{
                 display: flex;
             }
             
+            .logo1 {
+                width: 50px;
+                align-items: center;
+                
+            }
             
             .logo2{
                 width: 50px;
@@ -377,9 +378,16 @@ header {
             .logo4{
                 width: 50px;
             }
-                .line-separator {
-                    border-top: 1px solid #fff; /* Línea separadora */
+            
+                .line-separator1 {
+                    border-top: 1px solid #ffb703; /* Línea separadora */
                     width: 90%; /* Ancho de la línea (puedes ajustar el valor) */
+                    height: 5px; /* Grosor de la línea */
+                    margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
+                }
+                .footer-separator1 {
+                    border-top: 1px solid #ccc; /* Línea separadora */
+                    width: 80%; /* Ancho de la línea (puedes ajustar el valor) */
                     height: 5px; /* Grosor de la línea */
                     margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
                 }
@@ -569,6 +577,22 @@ header {
             }
             
                     /* BLOG Y NOTICIAS */
+                    .contizq{
+                        height: auto;
+            background-color: white;
+            padding: 0;
+            width: 800PX;
+        }
+        .mapa{
+            .contizq{
+                height: auto;
+    background-color: white;
+    padding: 0;
+    width: 800PX;
+}
+        }
+
+                    
                     .buttonleermas {
                         display: inline-block;
                         border-radius: 4px;
@@ -629,6 +653,9 @@ header {
                     
                     button:hover {
                         background-color: #0056b3;
+                    }
+                    .SECTION5{
+                        display: flex;
                     }
                     /*FOOTHER*/
                     /*Aquí comienza el estilo del footer*/
