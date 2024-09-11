@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>HOME</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ENCABEZADO</title>
     <link rel="stylesheet" href="CSS/ESTILOSL.CSS">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
-
 </head>
 <body>
 	<!---creacion del navegador-->
-
-    <header class="mb-4">
+    <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="PNG/logo_navbar.png" alt="Recorriendo mi pulgarcito">
+                <img src="png/logo_navbar.png" alt="Recorriendo mi pulgarcito">
             </div>
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-center" class="transpuesta">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Tours</a></li>
@@ -26,15 +22,15 @@
                 <li><a href="#">Galería</a></li>
             </ul>
             <div class="auth-links">
-                <button><a href="/Registro/registro.html">Registro</a></button>
-                <button><a href="/Inicio de Sesión/login.html">Inicio de Sesión</a></button>
+                <button>Registro</button>
+                <button>Inicio de Sesión</button>
             </div>
         </nav>
     </header>
-
+    <!---bienvenida----->
     <!----imagen bienvenida--->
 
-        <div class="container">
+    <div class="container">
         <img class="containerimg" src="PNG/Imagén_Bienvenida.png" alt="Snow" style="width:100%">
             <!---texto dentro de imagen-->
         <center><div class="text1" style="color: #fff;">"VIVE EL SALVADOR COMO NUNCA ANTES"</div></b></center>
@@ -42,10 +38,9 @@
         <center> <div class="text2"> Registrate y Accede a Nuestras Experiencias Únicas</div></center>
             <!---boton en imagen--->
         <center> <button class="btn"   style="color: #fff;
-        " name="Explorar" onclick="location.href='https://www.enlace'" >Explorar Ahora</button></center>
-        </div>
-
-    <!----parrafo de aventureros seccion izquierda--->
+            " name="Explorar" onclick="location.href='https://www.enlace'" >Explorar Ahora</button></center>
+            </div>
+            <!----parrafo de AVENTUREROS seccion izquierda--->
     <section id="SECTION1" class="SECTION1">
         <div class="izquierda">
             <h1 class="H1";>ÚNETE A NUESTRA</h1>
@@ -60,160 +55,228 @@
                 onclick="location.href"="https"><span>"Registrate Ahora" </span></button>
         </div>
         <div class="DERECHA">
-            
-                <img class="logo1" src="PNG/acceso_anticipado.png">
-                <h4 style="color:#ffb703;"> Acceso Anticipado</h4>
-                <p>Sé el primero en conocer y reservar nuevas experiencias y tours antes de que se publiquen al público general.</p>
-                <img class="logo2" src="PNG/descuentos_exclusivos.png">
-                <h4 style="color:#ffb703;">Descuentos Exclusivos</h4>
+            <div class="flex-container">
+                <div><img class="logo1" src="PNG/acceso_anticipado.png"></div>
+                <div><h4 style="color:#ea7700;"> Acceso Anticipado</h4></div>
+                <div><p>Sé el primero en conocer y reservar nuevas experiencias y tours antes de que se publiquen al público general.</p></div>
+            </div>
+                        <!-- Línea separadora -->
+                        <div class="line-separator"></div>
+                <div class="flex-container1">
+                <div><img class="logo2" src="PNG/descuentos_exclusivos.png"></div>
+                <div><h4 style="color:#ea7700;">Descuentos Exclusivos</h4></div>
+                </div>
                 <P>Obtén acceso a descuentos especiales y ofertas exclusivas en tours y experiencias</P>
-                <img class="logo3" src="PNG/Atencion_cliente.png">
-                <H4 style="color:#ffb703;">Atención Prioritaria al Cliente </H4>
-                <p> Recibe asistencia rápida y dedicada para resolver cualquier duda o inconveniente durante tu viaje.</p>
-                <img class="logo4" src="PNG/Recomendaciones_Personalizadas.png">
-                <h4 style="color:#ffb703;"> Recomendaciones Personalizadas</h4>
+                <!-- Línea separadora -->
+                <div class="line-separator"></div>
+                <div class="flex-container2">
+                <div><img class="logo3" src="PNG/Atencion_cliente.png"></div>
+                <div><H4 style="color:#ea7700;">Atención Prioritaria al Cliente </H4></div>
+                <div><p> Recibe asistencia rápida y dedicada para resolver cualquier duda o inconveniente durante tu viaje.</p></div>
+                </div>
+                        <!-- Línea separadora -->
+                        <div class="line-separator"></div>
+                <div class="flex-container3">
+                <div><img class="logo4" src="PNG/Recomendaciones_Personalizadas.png"></div>
+                <div><h4 style="color:#ea7700;"> Recomendaciones Personalizadas</h4></div>
+                </div>
                 <P> Descubre experiencias únicas y crea un itinerario a tu medidad</P>
             
         </div>
     </section>
-    
-    </div>
-
-
+</div>
 <!--sección sobre nosotros-->
-        <section id="section2" class="section2">
-        <div class="imagen">
-        <img class="sobre_nosotrosimg" src="PNG/sobre_nosotros.png" >
-        </div>
-        <div class="textoderecho">
-        <h2 class="parrafonos" style="color: #2571bc">Sobre Nosotros</h2> <br><br><br>   
-        <h2 class="parrafonos" style="color: #ffb703;">Sobre Nosotros</h2>
-                                    <p style="color: #fff;">Recorriendo Mi Pulgarcito nace del sueño de
-                                    Celina Hernández, nuestra fundadora. Cuando era adolescente, 
-                                    ella deseaba recorrer su país , El Salvador, sola, con el
-                                    objetivo de descubrirse así misma. Sin embargo, a los 17 
-                                    años no tuvo el valor necesario para aventurarse y dejó su
-                                    sueño en el olvido.</p>
-                            </p><br>
-                                <p style="color: #fff;">
-                                Posteriormente, Celina trabajó como mesera en una pequeña 
-                                cafetería durente cuatro años. lamentablemente,
-                                en junio de 2020,
-                                la cafetería cerró debido a la pandemia, ya que la falta
-                                de clientes la hizo insostenible. Como resultado, Celina 
-                                pasó casi un año sin empleo. A los 22 años, tras un año 
-                                de parón mundial, decidió tomar lo poco que tenía y, finalmente, reunió
-                                el valor para descubrir todo lo que El Salvador tenía para ella.
-                                </p>
+<section id="section2" class="section2">
+    <div class="imagen">
+    <img class="sobre_nosotrosimg" src="PNG/sobre_nosotros.png" >
+    </div>
+    <div class="textoderecho">
+    <h2 class="parrafonos" style="color: #2571bc">Sobre Nosotros</h2> <br><br><br>   
+    <h2 class="parrafonos" style="color: #ffb703;">Sobre Nosotros</h2>
+                                <p style="color: #fff;">Recorriendo Mi Pulgarcito nace del sueño de
+                                Celina Hernández, nuestra fundadora. Cuando era adolescente, 
+                                ella deseaba recorrer su país , El Salvador, sola, con el
+                                objetivo de descubrirse así misma. Sin embargo, a los 17 
+                                años no tuvo el valor necesario para aventurarse y dejó su
+                                sueño en el olvido.</p>
+                        </p><br>
+                            <p style="color: #fff;">
+                            Posteriormente, Celina trabajó como mesera en una pequeña 
+                            cafetería durente cuatro años. lamentablemente,
+                            en junio de 2020,
+                            la cafetería cerró debido a la pandemia, ya que la falta
+                            de clientes la hizo insostenible. Como resultado, Celina 
+                            pasó casi un año sin empleo. A los 22 años, tras un año 
+                            de parón mundial, decidió tomar lo poco que tenía y, finalmente, reunió
+                            el valor para descubrir todo lo que El Salvador tenía para ella.
+                            </p>
     <!--creación de botton--->
-    <center>
-    <button   class="button2" style="vertical-align:middle" name="conoce más"  onclick="location.href"="https"><span>"Conoce más" </span></button>
+    <button   class="button2" style="vertical-align:middle"
+    onclick="location.href"="https"><span>"Conoce más" </span></button>
     </center></div>
-
 </section>
-<!--SECCIÒN DESTINOS DESTACADOS-->
-<h1 style="color: #2571bc;"><center>Destinos Destacados</center></h1>
-<!----parrafo de tours seccion izquierda--->
-    <section id="SECTION3" class="SECTION3">
-        <div class="textizqui">
-            <h1 class="textiz";>Tours</h1>
-            <P>Explora las maravillas de El Salvador con nuestros tours guiados.
-                Desde ruinas mayas hasta paisajes volcánicos y ciudades vibrantes, 
-                nuestros itinerarios te ofrecen una experiencia enriquecedora y memorable.
-                ¡Acompañame y vive la aventura!
-            </P>
-            <br>
-        </div>
-        <div class="imgtazumal"> 
-            <img class="imgtazu" src="PNG/ruinas_tazumal.png">
-        </div>
-        <div  class="imgjuayua"><img class="imgju" src="PNG/cascadas_juayua.png"></div>
-    </section>
-    <!---seccion de experiencias-->
-    <section id="SECTION4" class="SECTION4">
-        <div class="imgiz">
-        </div>
-        <div class="imgrutacafe"> 
-            <img class="rutacafe" src="PNG/ruta_del_cafe.png">
-        </div>
-        <div  class="cerro"><img class="imgcerro" src="PNG/El_Pital.png"></div>
-    </section>
-    </div>
-
-            <h1 class="expder";>Experiencias</h1>
-            <P>Participa activamente en actividades ùnicas que te conectan con
-                la cultura y naturaleza de El Salvador. Desde talleres de cafè
-                hasta aventuras en kayak, nuestras experiencias te ofrecen 
-                momentos inolvidables y autenticos.
-                ¡Ùnete a la diversiòn!
-            </P>
-    </section>
-    </div>
-
-    <!--seccion de nuestros clientes-->
-    <h2>Nuestros Clientes</h2>
-    <p>reseña de experiencias</p>
-    <img class="fotocliente1" src="PNG/reseña6.jpg">
-    <h2>Raily Stuart</h2>
-    <h3>Aventura en el Volcán de Izalco</h3>
-        <h4>Parque Nacional Los Volcanes, Departamento de Sonsonate, El Salvador.</h4>
-            <p>Este fue el  mejor paisaje del volcán que vi. Se puede ver este volcán desde 
-            la carretera, el lago de Coatepeque y el océano pacífico en un día despejado. 
-            Un lugar perfecto para sacar buenas fotos entre amigos y familia.</p>
-
-    <img class="fotocliente2" src="PNG/reseña9.jpg">
-    <h2>Nataly Ramos</h2>
-    <h3>Tour de las Ruinas de Tazumal y Chalchuapa</h3>
-        <h4>Tazumal y Chalchuapa, Departamento de Santa Ana, El Salvador</h4>
-            <p>Perfecto para conocer más sobre nuestra historia pues aparte de un tour en que 
-            puedes recorrer todo el lugar el guía se encarga de contar la historia de las personas 
-            que habitaron en el y como fue descubierto este bello lugar.</p>
-
-    <img class="fotocliente3" src="PNG/reseña4.jpg">
-
-    <h2> Hector Celas</h2>
+<!--seccion de nuestros clientes-->
+<!-- Carrusel de reseñas y testimonios -->
+<section id="testimonials" class="testimonials">
+    <h1 style="color: #2571bc;">Nuestros Clientes</h1>
+    <div class="carousel-container">
+        <button class="prev" onclick="moveCarousel(-1)">❮</button>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img class="rese6img"   src="PNG/reseña6.jpg">
+                <h3>Aventura en el Volcán de Izalco</h3>
+<h4>Parque Nacional Los Volcanes, Departamento de Sonsonate, El Salvador.</h4>
+    <p>Este fue el  mejor paisaje del volcán que vi. Se puede ver este volcán desde 
+    la carretera, el lago de Coatepeque y el océano pacífico en un día despejado. 
+    Un lugar perfecto para sacar buenas fotos entre amigos y familia.</p><br>
+            <p class="author">Raily Stuart</p>
+                <div class="rating">
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="1">★</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="PNG/reseña4.jpg" class="rese4img">
     <h3> Ruta del Café en Apaneca</h3>
         <h4>Apaneca, Departamento de Ahuachapán, El Salvador</h4>
             <p>Increíble y exquisita experiencia, tuve la oportunidad de ver de primer mano cómo se
             cosecha café, también pude degustarlo, sin duda me llevo conmigo el sabor del café que 
-            aquí se cosecha. Ya estoy deseando volver.</p>
+            aquí se cosecha. Ya estoy deseando volver.</p><br>
+            <p class="author">Hector Celas</p>
+                
+            
+                <div class="rating">
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="1">★</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="PNG/reseña10.png" class="rese4img">
+        <h3>Surf en el Tunco</h3>
+        <h4>Playa El Tunco, Departamento de La Libertad, El Salvador</h4>
+            <p>De los mejores esperiencias que he vivido, los tutores son super tranquilos
+                y explican de una forma muy divertida, sin duda me diverti mucho además que puedes
+                disfrutar de unas increibles olas ya seas principiante o no.</p><br>
+            <p class="author">Daniela Jiron</p>
+                
+                <div class="rating">
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="1">★</span>
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="moveCarousel(1)">❯</button>
+    </div>
+</section>
+<script src="JS/jscarrusel.js"></script>
+
+<!--SECCIÒN DESTINOS DESTACADOS-->
+
+<section class="featured-destinations">
+    <h2>Destinos destacados</h2>
+    <div class="destination-grid">
+        <div class="destination">
+            <h6 style="color: #8ecae6;" class="hola">hola</h6>
+            <br>
+            <br>
+            <br>
+            <h1>Tours</h1>
+            <br>
+            <h3 style="color: white;">Explora las maravillas de El Salvador con nuestros tours guiados.
+                Desde ruinas mayas hasta paisajes volcánicos y ciudades vibrantes, 
+                nuestros itinerarios te ofrecen una experiencia enriquecedora y memorable.
+                ¡Acompañame y vive la aventura!
+            </h3>
+        </div>
+        <div class="destination">
+            <img src="PNG/ruinas_tazumal.png" alt="Ruinas de Tazumal">
+            <h3>Ruinas de Tazumal</h3>
+            <p>Descubre la historia antigua en las ruinas de Tazumal.</p>
+        </div>
+        <div class="destination">
+            <img src="PNG/cascadas_juayua.png" alt="Cascadas de Juayua">
+            <h3>Cascadas de Juayua</h3>
+            
+        </div>
+        <div class="destination">
+            <img src="PNG/ruta_del_cafe.png" alt="Ruta del Café en Ahuachapán">
+            <h3>Ruta del Café en Ahuachapán</h3>
+            <p>Experimenta el proceso del café en Ahuachapán.</p>
+        </div>
+        <div class="destination">
+            <img src="PNG/El_Pital.png" alt="El Pital Chalatenango">
+            <h3>El Pital Chalatenango</h3>
+            <p>Visita el punto más alto de El Salvador en El Pital.</p>
+        </div>
+        <div class="destination">
+            <h6 style="color:#8ecae6;" class="hola">hola</h6>
+            <br>
+            <br>
+            <br>
+            <b><h1>Experiencias</h1></b>
+            <br>
+            <h3 style="color: white;">Participa activamente en actividades ùnicas que te conectan con
+                la cultura y naturaleza de El Salvador. Desde talleres de cafè
+                hasta aventuras en kayak, nuestras experiencias te ofrecen 
+                momentos inolvidables y autenticos.
+                ¡Ùnete a la diversiòn!
+            </h3>
+        </div>
+    </div>
+</section>
 
 
+<!---blog y noticias-->
 <!--seccion blog y noticias-->
-<p>descubre las últimas novedades del turismo en El Salvador.
-    nuestro blog y sección de noticias te ofrecen guías de viaje, eventos,
-    recomendaciones y todo lo que necesitas saber para planificar tu próxima
-        aventura.¡Mantente al día y explora con nosotros!
-</p>
+</section>
 <section id="SECTION5" class="SECTION5">
     <div class="contizq">
-        <h1 class="pre1";>¿Cómo hacer senderismo de forma segura en El Salvador?</h1>
-        <P>si estas planeando subir un cerro o visitar una montaña con amigos y familiares debes seguir 
-            estas recomendaciones para hacer turismo de forma segura y precavida
-        </P>
-        <button  class="buttonleermas" style="vertical-align:middle" name="Leer más"  
-        onclick="location.href"="https"><span>" Leer más " </span></button>
-
-        <h1 class="pre2";> Suchitoto invita al XVIII Festival de Alcatares de la Cruz</h1>
+<section class="additional-articles">
+    <center><h2>BLOG Y NOTICIAS</h2><br></center>
+    <p>descubre las últimas novedades del turismo en El Salvador.
+        nuestro blog y sección de noticias te ofrecen guías de viaje, eventos,
+        recomendaciones y todo lo que necesitas saber para planificar tu próxima
+            aventura.¡Mantente al día y explora con nosotros!
+    </p>
+    <button>Leer más</button>
+</section>
+<section class="additional-articles">
+    <h2 class="pre1";>¿Cómo hacer senderismo de forma segura en El Salvador?</h2>
+    <P>si estas planeando subir un cerro o visitar una montaña con amigos y familiares debes seguir 
+        estas recomendaciones para hacer turismo de forma segura y precavida
+    </P>
+    <button>Leer más</button>
+</section>
+    <section class="additional-articles">
+        <h2 class="pre1";>Suchitoto invita al XVIII Festival de Alcatares de la Cruz</h2>
         <P> Las actividades ae desarrollarán el viernes 3 y el sábado 4 de mayo. 
             Los turistas podrán disfrutar de recorridos por diversos altares ubicados 
             en hoteles, restaurantes, escuelas y casas.
         </P>
-        <button  class="buttonleermas" style="vertical-align:middle" name="Leer más"  
-        onclick="location.href"="https"><span>"Leer más" </span></button>
+        <button>Leer más</button>
+        </section>
 
-        <h1 class="pre3";>10 bellas y coloridas poblaciones de El Salvador que debes visitar en 2024</h1>
-        <P>si estas planeando dubir un cerro o visitar una montaña con amigos y familiares debes seguir 
-            estas recomendaciones para hacer turismo de forma segura y precavida
-        </P>
-        <button  class="buttonleermas" style="vertical-align:middle" name="Leer más"  
-        onclick="location.href"="https"><span>"Leer más" </span></button>
+        <section class="additional-articles">
+            <h2 class="pre1";>10 bellas y coloridas poblaciones de El Salvador que debes visitar en 2024</h2>
+            <P>si estas planeando dubir un cerro o visitar una montaña con amigos y familiares debes seguir 
+                estas recomendaciones para hacer turismo de forma segura y precavida
+            </P>
+            <button>Leer más</button>
+        </section>
     </div>
     <div class="imgmapa"> 
-        <img class="imgmapa" src="mapa.png">
+        <img class="imgmapa" src="htt">
     </div>
 </section>
-
 <!--creación de footer-->
 
 <footer class="footer">
@@ -264,5 +327,45 @@
         &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
     </div>
 </footer>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
