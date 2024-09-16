@@ -1,117 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
-
-body {
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para la barra de navegación */
-.navbar {
-    background-color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-
-  /* Estilo para los enlaces de navegación */
-.navbar a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 16px; /* Ajusta el tamaño de la fuente para mejor legibilidad */
-    font-weight: regular;
-    padding: 10px 15px;
-    text-indent: 2px;
-    text-size-adjust: auto;
-}
-
-  /* Hover effect para los enlaces */
-.navbar a:hover {
-    color: #0056b3;
-    font-weight: bold;
-}
-
-  /* Alineación de los elementos */
-.navbar .menu {
-    display: flex;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-    flex-direction: row;
-    align-items: flex-start;
-    }
-
-    .navbar .menu {
-    flex-direction: row;
-    width: 100%;
-    }
-
-    .navbar a {
-    margin: 10px 0;
-    }
-}
-
-/* Botones de registro e inicio de sesión */
-.auth-links button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 4px;
-}
-
-.auth-links button:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .navbar .menu {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-    }
-
-    .auth-links {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .auth-links button {
-        margin-top: 10px;
-    }
-}
-
 .hero-section {
     display: block;
     position: relative;
@@ -153,73 +39,94 @@ header {
     color: #111111;
 }
 
-.card {
-    width: 335px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #8ECAE6; 
-    border-radius: 5px;
-    overflow: hidden; 
-}
-
-.card img {
-    width: 150%; /* Asegura que las imágenes tengan el mismo ancho que las tarjetas */
-    height: 300px; /* Ajusta la altura según sea necesario */
-    object-fit: cover; /* Mantiene la proporción de las imágenes */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+.tours {
     display: block;
+    position: relative;
+    margin-top: 9%;
+    width: 100%;
+    height: 81vh;
+    overflow: hidden;
 }
 
-.card-body {
-    margin: 15px;
-    background-color: #8ECAE6; 
+.tours img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La imagen ocupará el 100% de la altura del contenedor */
+    object-fit: cover; /* Esto asegurará que la imagen se ajuste completamente al contenedor sin deformarse */
+    object-position: center; /* Centra la imagen dentro del contenedor */
 }
 
-.card-body h4 {
-    font-size: 24px;
-    color: #D1460B;
+.tours h1 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: auto;
+    font-size: 43px;
+    font-weight: 700;
+    color: #2571BC;
+}
+.tours h2 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: auto;
+    font-style: italic; /* Agregar cursiva */
+    font-size: 19px;
+    font-weight: 400;
+    color: #0c0c0c;
+    line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
 }
 
-.card-body h5 {
-    font-size: 21px;
-    color: #EA7700;
-}
-.card-body h6 {
-font-size: 19;
-color: #252525;
-}
-
-.card-text {
-    font-size: 16px;
-    color: #000000;
-    margin: 8px;
-}
-
-.blog{
+.tour_container{
     display: flex;
     flex-direction: column;
-    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #c0e5f7f1;
+    padding: 20px;
 }
 
-.blog h1{
-    text-align: center;
-    font-weight: 700;
-    padding: 33px;
-    font-size: 26px;
-    color: #D1460B;
+.tours_box{
+    border-radius: 10px;
+    background-color: #4e9decf1;
+    text-align: center; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;
+    max-width: 365px;
 }
 
-.blog h2{
-    font-size: 16px;
-    white-space: nowrap;
-    text-align: center;
-    color: #111111;
+.tours_box img {
+    width: 90%;
+    height: 200px;
+    border-radius: 10px; 
+    margin-bottom: 15px;
 }
 
-.tours_cars .card {
-    margin-bottom: 20px;
-} 
+.tours_box h4, h5, h6, p {
+    margin: 10px 0; 
+    text-align: justify;
+    font-size: 14px;
+}
 
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
 
 .button_blog button {
     background-color: #FFB703; 
