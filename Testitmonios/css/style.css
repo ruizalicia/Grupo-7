@@ -14,8 +14,8 @@
     transform: translate(-50%, -50%);
     padding: 5px;
     width: auto;
-    font-size: 43px;
-    font-weight: 700;
+    font-size: 53px;
+    font-weight: 850;
     color: #2571BC;
 }
 .testimonials{
@@ -26,9 +26,9 @@
 
 .testimonials h1{
     text-align: center;
-    font-weight: 700;
-    padding: 33px;
-    font-size: 26px;
+    font-weight: 747;
+    padding: 30px;
+    font-size: 33px;
     color: #D1460B;
 }
 
@@ -42,29 +42,22 @@
 .tours {
     display: block;
     position: relative;
-    margin-top: 9%;
+    margin-top: 2%;
     width: 100%;
-    height: 81vh;
+    height: 83vh;
     overflow: hidden;
-}
-
-.tours img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* La imagen ocupará el 100% de la altura del contenedor */
-    object-fit: cover; /* Esto asegurará que la imagen se ajuste completamente al contenedor sin deformarse */
-    object-position: center; /* Centra la imagen dentro del contenedor */
 }
 
 .tours h1 {
     display: block;
     position: absolute;
     text-align: center;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5px;
     width: auto;
-    font-size: 43px;
+    font-size: 28px;
     font-weight: 700;
     color: #2571BC;
 }
@@ -72,13 +65,13 @@
     display: block;
     position: absolute;
     text-align: center;
-    top: 65%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     width: auto;
     font-style: italic; /* Agregar cursiva */
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
     color: #0c0c0c;
     line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
@@ -87,49 +80,207 @@
 .tour_container{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: #c0e5f7f1;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px; /* Espacio arriba de la sección */
+    margin-bottom: 50px;
     padding: 20px;
+    background-color: #94bfe6;
 }
 
 .tours_box{
-    border-radius: 10px;
-    background-color: #4e9decf1;
+    border-radius: 3px;
+    background-color: #ffe927;
     text-align: center; 
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 20px auto;
-    max-width: 365px;
+    padding: 20px 15px;
+    margin: 20px;
+    max-width: 2600px;
+    flex-grow: 1;
 }
 
 .tours_box img {
-    width: 90%;
-    height: 200px;
-    border-radius: 10px; 
-    margin-bottom: 15px;
+    width: 87%;
+    height: 165px;
+    margin-bottom: 3px;
 }
 
 .tours_box h4, h5, h6, p {
-    margin: 10px 0; 
+    margin: 3px 0; 
     text-align: justify;
+}
+
+.tours_box h4{
+    font-size: 16px;
+    color: #2571BC;
+    font-weight: 655;
+}
+
+.tours_box h5{
+    font-size: 15px;
+    color: #EA7700;
+}
+.tours_box h6{
     font-size: 14px;
 }
-
-.col-md-4 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+.tours_box p{
+    font-size: 13px;
+    color: #0c0b0b;
 }
 
-.row {
+.experience {
+    display: block;
+    position: relative;
+    margin-top: 2%;
+    width: 100%;
+    height: 83vh;
+    overflow: hidden;
+}
+
+.experience h1 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: auto;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2571BC;
+}
+.experience h2 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: auto;
+    font-style: italic; /* Agregar cursiva */
+    font-size: 16px;
+    font-weight: 400;
+    color: #0c0c0c;
+    line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
+}
+
+.experience_container{
     display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap;
+    flex-direction:column;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px; /* Espacio arriba de la sección */
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #ff7322;
+}
+
+.experience_box{
+    border-radius: 3px;
+    background-color: #2571b2;
+    text-align: center; 
+    padding: 20px 15px;
+    margin: 20px;
+    max-width: 2600px;
+    flex-grow: 1;
+}
+
+.experience_box img {
+    width: 87%;
+    height: 165px;
+    margin-bottom: 3px;
+}
+
+.experience_box h4, h5, h6, p {
+    margin: 3px 0; 
+    text-align: justify;
+}
+
+.experience_box h4{
+    font-size: 16px;
+    color:#94bfe6;
+    font-weight: 655;
+}
+
+.experience_box h5{
+    font-size: 15px;
+    color: #ffe927;
+}
+.experience_box h6{
+    font-size: 14px;
+}
+.experience_box p{
+    font-size: 13px;
+    color: #0c0b0b;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+.blog h1{
+    text-align: center;
+    font-weight: 747;
+    padding: 30px;
+    font-size: 33px;
+    color: #D1460B;
+}
+
+.blog h2{
+    font-size: 16px;
+    white-space: nowrap;  
+    text-align: center;
+    color: #111111;
+} 
+
+.blog_container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px; /* Espacio arriba de la sección */
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color:  #ffe927;
+}
+
+.blog_box{
+    border-radius: 3px;
+    background-color:  #94bfe6;
+    text-align: center; 
+    padding: 20px 15px;
+    margin: 20px;
+    max-width: 2600px;
+    flex-grow: 1;
+}
+
+.blog_box img {
+    width: 87%;
+    height: 265px;
+    margin-bottom: 3px;
+}
+
+.blog_box h5, p {
+    margin: 3px 0; 
+    text-align: justify;
+}
+
+.blog_box h5{
+    font-size: 16px;
+    color: #D1460B;
+    font-weight: 655;
+}
+
+.blog_box p{
+    font-size: 13px;
+    color: #0c0b0b;
 }
 
 .button_blog button {
-    background-color: #FFB703; 
+    background-color: #2571BC; 
     color: #070707;              
     padding: 10px 20px;        
     border: none;              
@@ -140,7 +291,7 @@
     transition: background-color 0.3s ease; 
 }
 
-.button_blogbutton:hover {
+.button_blog button:hover {
     background-color: #EA7700; 
 }
 
@@ -149,13 +300,35 @@
     transform: scale(0.98);    
 }
 
-.button_blog button:focus {
-    outline: none;             
-    box-shadow: 0 0 5px #D1460B; 
+.col-md-4{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 40px;
 }
+
+.col-md-8{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.col-md-6{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .footer {
     background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
     padding: 20px 0; /* Espaciado superior e inferior */
+    flex-basis: 25%;
     margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
 }
 
