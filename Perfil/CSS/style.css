@@ -1,138 +1,148 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
-
+/* General Layout */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+main.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Perfil Section */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+section.row {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.col-md-4 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 5px solid #6c757d; /* Borde alrededor de la imagen */
+}
+
+/* Botón de editar perfil */
+.btn-outline-secondary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Listas de ubicación e idiomas */
+ul.list-unstyled li {
+    font-size: 1.1rem;
+    display: flex;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
 }
 
-header.mb-4 {
-    margin-bottom: 40px;
+ul.list-unstyled li img {
+    margin-right: 10px;
 }
 
-/*aquí comienza el estilo de las cards*/
-section {
-    padding: 0 120px; /* Espaciado a ambos lados de la sección */
-    margin-bottom: 40px; /* Espacio inferior entre la sección y la siguiente */
-}
-
-.row {
-    display: flex; /* Usa Flexbox para alinear los elementos */
-    justify-content: block; /* Distribuye las columnas con espacio entre ellas */
-}
-
+/* Sección de Favoritos */
 .card {
-    margin: 0 5px; /* Espaciado entre tarjetas */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-img-top {
-    width: 100%; /* Asegura que la imagen se ajuste al contenedor de la tarjeta */
-    height: auto; /* Mantiene la proporción de la imagen */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
 }
 
-/* Estilos específicos para las cards dentro del acordeón */
-.accordion-body .row {
-    display: flex; /* Alineación en fila */
-    justify-content: space-between; /* Espacio entre las columnas */
-    flex-wrap: nowrap; /* Evita que las columnas se envuelvan a la siguiente línea */
-    gap: 15px;
+.card-title {
+    font-size: 1.25rem;
+    color: #495057;
 }
 
-.accordion-body .col-sm-4 {
-    flex: 1 0 30%; /* Asegura que cada tarjeta ocupe aproximadamente un tercio del espacio */
-    max-width: 30%; /* Limita el ancho máximo de cada tarjeta */
+.card-text img {
+    margin-right: 8px;
 }
 
-.accordion-body .card {
-    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+/* Sección de Reservas y Viajes */
+.accordion-button {
+    background-color: #343a40;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
 }
 
-
-
-/*Aquí comienza el estilo del footer*/
-.footer {
-    background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
-    padding: 20px 0; /* Espaciado superior e inferior */
-    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
+.accordion-button:hover {
+    background-color: #495057;
 }
 
-.footer ul {
-    list-style-type: none; /* Elimina las viñetas de la lista */
-    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
-    margin: 0; /* Ajusta el margen si es necesario */
+.accordion-button:not(.collapsed) {
+    background-color: #495057;
 }
 
-.footer .column ul {
-    list-style-type: none; /* Elimina las viñetas */
-    padding-left: 0;
-    margin: 0;
+.accordion-body {
+    background-color: #f8f9fa;
 }
 
-.footer .column ul li {
-    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+.accordion .card {
+    border: none;
 }
 
-
-.container {
-    display: flex;
-    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
-    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
-    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+.accordion .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.column {
-    flex: 1; /* Hace que todas las columnas se expandan por igual */
-    margin: 0 10px; /* Espaciado horizontal entre columnas */
-    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
+.accordion .btn {
+    border-radius: 20px;
 }
 
-.column h3{
-    font-weight: bolder;
+.accordion .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.columm h3 ul{
-    font-weight: bolder;
-}
-.column h5{
-    font-weight: bolder;
+.accordion .btn-primary:hover {
+    background-color: #0056b3;
 }
 
-/* Opcional: Ajustar el tamaño de las imágenes si es necesario */
-.column img {
-    max-width: 100%;
-    height: auto;
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .col-md-8 {
+        text-align: center;
+    }
+
+    ul.list-unstyled li {
+        justify-content: center;
+    }
+
+    .accordion-button {
+        text-align: center;
+    }
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center; /* Centra los iconos horizontalmente */
-    margin: 20px 0; /* Espaciado superior e inferior */
-}
-
-.social-icons a {
-    margin: 0 20px; /* Espaciado entre los iconos */
-}
-
-.social-icons img {
-    width: 35px; /* Tamaño de los iconos, ajusta según sea necesario */
-    height: auto; /* Mantiene la proporción del icono */
-}
-
-.footer-separator {
-    border-top: 1px solid #ccc; /* Línea separadora */
-    width: 80%; /* Ancho de la línea (puedes ajustar el valor) */
-    height: 5px; /* Grosor de la línea */
-    margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
-}
-
-.copyright {
-    text-align: center; /* Centra el texto en el contenedor */
-    margin-top: 10px; /* Espaciado superior */
-    color: #fff;
-}

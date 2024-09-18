@@ -9,28 +9,36 @@
 /* Estilo general del cuerpo */
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #f8f9fa; /* Fondo sutil */
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Estilo para el header */
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Estilo para la barra de navegación */
 .navbar {
-    background-color: #fff;
-    padding: 10px 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centra el menú de navegación */
     flex-grow: 1;
+}
+
+/* Estilo para el logo */
+.logo img {
+    max-width: 150px; /* Aumenta el tamaño del logo */
+    height: auto;
 }
 
 /* Estilo para los enlaces de navegación */
@@ -38,23 +46,20 @@ header {
     color: #007BFF;
     text-decoration: none;
     font-size: 16px;
-    font-weight: regular;
-    padding: 10px 15px;
-    margin: 0 10px; /* Aumenta la separación horizontal entre los enlaces */
-    text-indent: 2px;
-    text-size-adjust: auto;
+    padding: 10px 20px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
-/* Hover effect para los enlaces */
 .navbar a:hover {
     color: #0056b3;
     font-weight: bold;
 }
 
-/* Alineación de los elementos de la barra de navegación */
-.navbar .menu {
+/* Alineación de los elementos del menú */
+.nav.justify-content-center {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 /* Estilo para el dropdown "Mi Cuenta" */
@@ -64,71 +69,53 @@ header {
 
 .dropdown-toggle {
     cursor: pointer;
+    position: relative;
+    padding-right: 20px;
 }
 
-/* Ajustes para el dropdown */
+.dropdown-toggle::after {
+    content: '▼';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #007BFF;
+}
+
+/* Ajustes para el menú desplegable */
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
-    max-width: 50vw; /* Limita el ancho al 90% del viewport */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0;
     list-style: none;
     left: 0;
-    right: auto; /* Alinea a la izquierda por defecto */
-    transform: translateX(0); /* Ajuste relativo a la posición */
-    overflow-x: hidden; /* Evita desbordamiento horizontal */
-    overflow-y: auto; /* Permite desplazamiento vertical si es necesario */
-    max-height: 80vh; /* Limita la altura del menú desplegable al 80% del viewport */
-    font-size: 14px;
+    border-radius: 4px;
 }
 
 .dropdown-menu li {
-    padding: 8px 16px;
+    padding: 10px 20px;
     text-align: left;
-    margin-bottom: 5px; /* Aumenta el espacio entre las opciones del dropdown */
 }
 
 .dropdown-menu li a {
+    color: black;
     text-decoration: none;
     display: block;
-    color: black;
-    font-size: 14px; /* Mantener el tamaño de fuente consistente */
-    font-weight: normal; /* Asegura que el peso de la fuente sea consistente */
-    padding: 8px 16px; /* Mantener el padding consistente */
-}
-
-.dropdown-menu li:hover {
-    background-color: #ddd;
+    padding: 10px 15px;
 }
 
 .dropdown-menu li a:hover {
-    font-size: 14px; /* Mantén el mismo tamaño de fuente en hover */
-    font-weight: normal; /* Asegura que el peso de la fuente no cambie */
-    color: #0056b3; /* Solo cambia el color en hover */
+    background-color: #f1f1f1;
+    color: #0056b3;
 }
 
-.dropdown-menu.show {
+.dropdown:hover .dropdown-menu {
     display: block;
-}
-
-/* Estilo para los botones de registro e inicio de sesión */
-.auth-links button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 4px;
-    margin: 0 10px; /* Aumenta la separación horizontal entre los botones */
-}
-
-.auth-links button:hover {
-    background-color: #0056b3;
 }
 
 /* Ajustes para pantallas pequeñas */
@@ -144,21 +131,11 @@ header {
     }
 
     .navbar a {
-        margin: 15px 0; /* Aumenta la separación vertical entre los enlaces en pantallas pequeñas */
+        margin: 15px 0;
     }
 
-    .auth-links {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .auth-links button {
-        margin-top: 10px;
-    }
-
-    /* Ajustes específicos para el dropdown en pantallas pequeñas */
     .dropdown-menu {
         left: auto;
-        right: 0; /* Alinea el menú al borde derecho en pantallas pequeñas */
+        right: 0;
     }
 }
