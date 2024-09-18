@@ -42,7 +42,7 @@ section.row {
 }
 
 .btn-outline-secondary:hover {
-    background-color: #6c757d;
+    background-color: #3873a7;
     color: white;
 }
 
@@ -93,7 +93,7 @@ ul.list-unstyled li img {
 }
 
 .accordion-button:hover {
-    background-color: #495057;
+    background-color: #88bef5;
 }
 
 .accordion-button:not(.collapsed) {
