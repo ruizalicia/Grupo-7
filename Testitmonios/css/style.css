@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=swap');
+
 .hero-section {
     display: block;
     position: relative;
@@ -9,31 +11,33 @@
     display: block;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5px;
     width: auto;
-    font-size: 53px;
-    font-weight: 850;
+    font-family: cabin sketch;
+    font-size: 48px;
+    font-weight: 800;
     color: #2571BC;
 }
+
 .testimonials{
     display: flex;
     flex-direction: column;
-    font-family: "Open Sans", sans-serif;
 }
 
 .testimonials h1{
     text-align: center;
-    font-weight: 747;
-    padding: 30px;
-    font-size: 33px;
+    font-weight: 745;
+    font-size: 35px;
     color: #D1460B;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .testimonials h2{
-    font-size: 16px;
+    font-size: 15px;
     white-space: nowrap;
     text-align: center;
     color: #111111;
@@ -52,7 +56,7 @@
     display: block;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5px;
@@ -65,7 +69,7 @@
     display: block;
     position: absolute;
     text-align: center;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
@@ -85,12 +89,12 @@
     margin-top: 50px; /* Espacio arriba de la sección */
     margin-bottom: 50px;
     padding: 20px;
-    background-color: #94bfe6;
+    background-color: #8ECAE6;
 }
 
 .tours_box{
     border-radius: 3px;
-    background-color: #ffe927;
+    background-color: #FFB703;
     text-align: center; 
     padding: 20px 15px;
     margin: 20px;
@@ -140,20 +144,20 @@
     display: block;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5px;
     width: auto;
     font-size: 28px;
     font-weight: 700;
-    color: #2571BC;
+    color: #FFB703;
 }
 .experience h2 {
     display: block;
     position: absolute;
     text-align: center;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
@@ -223,14 +227,15 @@
 
 .blog h1{
     text-align: center;
-    font-weight: 747;
-    padding: 30px;
-    font-size: 33px;
+    font-weight: 745;
+    font-size: 35px;
     color: #D1460B;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .blog h2{
-    font-size: 16px;
+    font-size: 15px;
     white-space: nowrap;  
     text-align: center;
     color: #111111;
@@ -244,22 +249,22 @@
     margin-top: 50px; /* Espacio arriba de la sección */
     margin-bottom: 50px;
     padding: 20px;
-    background-color:  #ffe927;
+    background-color:  #FFB703;
 }
 
 .blog_box{
     border-radius: 3px;
     background-color:  #94bfe6;
     text-align: center; 
-    padding: 20px 15px;
-    margin: 20px;
+    padding: 17px 15px;
+    margin: 25px;
     max-width: 2600px;
     flex-grow: 1;
 }
 
 .blog_box img {
-    width: 87%;
-    height: 265px;
+    width: 90%;
+    height: 270px;
     margin-bottom: 3px;
 }
 
