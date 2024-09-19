@@ -30,7 +30,6 @@ section.row {
     width: 100%;
     max-width: 250px;
     height: auto;
-    border: 5px solid #6c757d; /* Borde alrededor de la imagen */
 }
 
 /* Botón de editar perfil */
@@ -146,3 +145,81 @@ ul.list-unstyled li img {
     }
 }
 
+/* Estilo del footer */
+.footer {
+    background-color: #2571b2; /* Fondo del footer */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
+}
+
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+}
+
+.footer .column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .column h3,
+.footer .column h5 {
+    font-weight: bolder;
+}
+
+.footer .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Línea separadora del footer */
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Texto del copyright */
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
+}
