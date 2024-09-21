@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f8f9fa; /* Fondo sutil */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra el menú de navegación */
+    flex-grow: 1;
+}
+
+/* Estilo para el logo */
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilo para los enlaces de navegación */
+.navbar a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Alineación de los elementos del menú */
+.nav.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para el dropdown "Mi Cuenta" */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #007BFF;
+}
+
+/* Ajustes para el menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    list-style: none;
+    left: 0;
+    border-radius: 4px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+    color: #0056b3;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 15px 0;
+    }
+
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}

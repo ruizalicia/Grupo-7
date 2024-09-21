@@ -3,78 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Recorriendo mi Pulgarcito - Galería</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="Imagenes_galería/logo_navbar.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog & Testimonios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
-                </ul>
+    <header class="mb-4">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Imagenes_galería/logo_navbar.png" alt="Recorriendo mi pulgarcito">
             </div>
-            <div class="auth-links">
-                <button>Registro</button>
-                <button>Inicio de Sesión</button>
-            </div>
+            <ul class="nav justify-content-center">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#">Blog & Testimonios</a></li>
+                <li><a href="#">Galería</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="accountDropdown">Mi Cuenta</a>
+                    <ul class="dropdown-menu" id="accountDropdownMenu">
+                        <li><a href="perfil.html" id="PerfilLink">Perfil</a></li>
+                        <li><a href="#" id="LogoutLink">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="galeria">
-            <h1 class="text-center my-4">Galería</h1>
-            <p class="text-center mx-4">
-                Explora nuestra galería y déjate inspirar por las impresionantes imágenes de los destinos más bellos de El Salvador. Desde playas paradisíacas y majestuosos volcanes hasta antiguas ruinas y vibrantes ciudades, descubre la riqueza y diversidad de este hermoso país a través de nuestras fotos y videos.
-                ¡Embárcate en tu próxima aventura visual!
-            </p>
-
-            <div class="container text-center">
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="Imagenes_galería/imagen_cafe.png" alt="Mano sosteniendo café">
+        <div class="masonry-container">
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Crashing Waves</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Landscapes, Waves, Beach</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
                     </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img2.png" alt="Carpa de camping">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img3.png" alt="Bote en el agua">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img4.png" alt="Persona leyendo un mapa">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img5.png" alt="Fuente en un parque">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img6.png" alt="Vidriera colorida">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img7.png" alt="Mercado artesanal">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img8.png" alt="Juguetes de madera">
-        </div>
-        <div class="gallery-item">
-            <img src="Imagenes_galería/img9.png" alt="Edificio con arquitectura antigua">
-        </div>
-    </div>
-</div>
-
-            
-            
+                    <img class="panel-img" src="Imagenes_galería/Asset 77.png" alt=""/>
+                </div>
             </div>
-        </section>
+            <div class="panel">
+            <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Blue Docks</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Docks, Sunset, Horizon</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 78.png" alt=""/>
+                </div></div>
+            <div class="panel">
+                    <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Pastel Canyons</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Canyon, Rock formations</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 79.png" alt=""/>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Pink Mountain Sunset</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Landscapes, Sunset, Mountains</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 82.png" alt=""/>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Autumn Pine</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Forest, Pines, Mountains</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 81.png" alt=""/>
+                </div>	
+            </div>
+            
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Purple Power Poles</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Urban, landscape, manmade</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/asset 80.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Purple Ridges</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Mountains, Sunrise, Landscapes</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 86.png" alt=""/>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Spinning Lights</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Carnival, Lights, Nightlife</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 83.png" alt=""/>
+                </div>	
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Feather Bokeh</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Close-ups, Feather, Bokeh</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 85.png" alt=""/>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Irridescent Bench</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Landscapes, Still-Life, Countryside</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="Imagenes_galería/Asset 84.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-wrapper">
+                    <div class="panel-overlay">
+                        <div class="panel-text">
+                            <div class="panel-title">Blazing Dandelions</div>
+                            <div class="panel-tags">
+                                <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                                <span class="tags-list">Dandelion, Bokeh, Flora</span>
+                            </div>
+                        </div>
+                        <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                        <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                    </div>
+                    <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/bokeh-dandelion.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -110,19 +250,16 @@
                 </ul>
             </div>
         </div>
-        
-        <!-- Línea separadora -->
         <div class="footer-separator"></div>
-    
         <div class="social-icons">
             <a href="#"><img src="Imagenes_galería/facebook.png" alt="Facebook"></a>
             <a href="#"><img src="Imagenes_galería/insragram.png" alt="Instagram"></a>
             <a href="#"><img src="Imagenes_galería/spotify.png" alt="Spotify"></a>
-            <a href="#"><img src="Imagenes_galería/whatsapp.png" alt="whatsapp"></a>
-            <a href="#"><img src="Imagenes_galería/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img src="Imagenes_galería/whatsapp.png" alt="WhatsApp"></a>
+            <a href="#"><img src="Imagenes_galería/linkedin.png" alt="LinkedIn"></a>
         </div>
-        <div class="copyright" >
-            &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
+        <div class="copyright">
+            &copy; RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
         </div>
     </footer>
 
