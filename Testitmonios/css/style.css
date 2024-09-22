@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=swap');
 
-.hero-section {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 81vh;
-    overflow: hidden;
-}
-.hero-section h1 {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    width: auto;
-    font-family: cabin sketch;
-    font-size: 48px;
-    font-weight: 800;
-    color: #2571BC;
-}
-
 .testimonials{
     display: flex;
     flex-direction: column;
@@ -56,7 +34,7 @@
     display: block;
     position: absolute;
     text-align: center;
-    top: 40%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5px;
@@ -75,7 +53,7 @@
     padding: 10px;
     width: auto;
     font-style: italic; /* Agregar cursiva */
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #0c0c0c;
     line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
@@ -98,13 +76,14 @@
     text-align: center; 
     padding: 20px 15px;
     margin: 20px;
-    max-width: 2600px;
-    flex-grow: 1;
+    max-width: 1200px;
+    flex-shrink: 1;
+    box-sizing: border-box;
 }
 
 .tours_box img {
-    width: 87%;
-    height: 165px;
+    width: 95%;
+    height: 190px;
     margin-bottom: 3px;
 }
 
@@ -163,7 +142,7 @@
     padding: 10px;
     width: auto;
     font-style: italic; /* Agregar cursiva */
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #0c0c0c;
     line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
@@ -186,13 +165,16 @@
     text-align: center; 
     padding: 20px 15px;
     margin: 20px;
-    max-width: 2600px;
+    max-width: 1200px;
     flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .experience_box img {
-    width: 87%;
-    height: 165px;
+    width: 95%;
+    height: 190px;
     margin-bottom: 3px;
 }
 
@@ -258,12 +240,15 @@
     text-align: center; 
     padding: 17px 15px;
     margin: 25px;
-    max-width: 2600px;
+    max-width: 1200px;
     flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .blog_box img {
-    width: 90%;
+    width: 97%;
     height: 270px;
     margin-bottom: 3px;
 }
@@ -311,11 +296,6 @@
     margin-bottom: 40px;
 }
 
-.col-md-8{
-    display: flex;
-    margin-bottom: 30px;
-}
-
 .col-md-6{
     display: flex;
     justify-content:center;
@@ -330,86 +310,97 @@
     margin-right: 0;
 }
 
-.footer {
-    background-color: #2571b2; /* Puedes ajustar el color de fondo según tus necesidades */
-    padding: 20px 0; /* Espaciado superior e inferior */
-    flex-basis: 25%;
-    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
-}
-
-.footer ul {
-    list-style-type: none; /* Elimina las viñetas de la lista */
-    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
-    margin: 0; /* Ajusta el margen si es necesario */
-}
-
-.footer .column ul {
-    list-style-type: none; /* Elimina las viñetas */
-    padding-left: 0;
-    margin: 0;
-}
-
-.footer .column ul li {
-    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
-}
-
-
-.container {
+.rating {
     display: flex;
-    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
-    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
-    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+    justify-content: center;
+    margin: 10px 0;
 }
 
-.column {
-    flex: 1; /* Hace que todas las columnas se expandan por igual */
-    margin: 0 10px; /* Espaciado horizontal entre columnas */
-    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
+.star {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.column h3{
-    font-weight: bolder;
+.star:hover,
+.star.selected {
+    color: gold;
 }
 
-.columm h3 ul{
-    font-weight: bolder;
-}
-.column h5{
-    font-weight: bolder;
-}
-
-/* Opcional: Ajustar el tamaño de las imágenes si es necesario */
-.column img {
-    max-width: 100%;
-    height: auto;
+.button_information {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: blue; /* Color del texto azul */
+    font-size: 16px; /* Ajusta el tamaño de la fuente según lo necesites */
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+    padding: 5px; /* Opcional: ajusta el espaciado */
+    text-decoration: none; /* Sin subrayado */
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center; /* Centra los iconos horizontalmente */
-    margin: 20px 0; /* Espaciado superior e inferior */
+.button_information:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el cursor */
+    color: darkblue; /* Cambia el color al pasar el cursor */
 }
 
-.social-icons a {
-    margin: 0 20px; /* Espaciado entre los iconos */
+
+.add-review-btn {
+    background-color: #3e9dfc; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 5px 0; /* Tamaño del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando pase por encima */
+    font-size: 17px; /* Tamaño de la fuente */
+    width: 90%;
+    display:block;
+    margin: 0 auto;
 }
 
-.social-icons img {
-    width: 35px; /* Tamaño de los iconos, ajusta según sea necesario */
-    height: auto; /* Mantiene la proporción del icono */
+.add-review-btn:hover {
+    background-color: #2571BC; /* Cambia de color cuando se pasa el mouse */
 }
 
-.footer-separator {
-    border-top: 1px solid #ccc; /* Línea separadora */
-    width: 80%; /* Ancho de la línea (puedes ajustar el valor) */
-    height: 5px; /* Grosor de la línea */
-    margin: 20px auto; /* Espaciado superior e inferior, auto centra la línea */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro */
+  }
+  
+  .modal-content {
+    background-color: rgb(188, 208, 224);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 5px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
 }
 
-.copyright {
-    text-align: center; /* Centra el texto en el contenedor */
-    margin-top: 10px; /* Espaciado superior */
-    color: #fff;
-}
