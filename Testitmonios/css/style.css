@@ -72,7 +72,7 @@
 
 .tours_box{
     border-radius: 3px;
-    background-color: #FFB703;
+    background-color: #ffffff;
     text-align: center; 
     padding: 20px 15px;
     margin: 20px;
@@ -161,7 +161,7 @@
 
 .experience_box{
     border-radius: 3px;
-    background-color: #2571b2;
+    background-color: #ffffff;
     text-align: center; 
     padding: 20px 15px;
     margin: 20px;
@@ -329,27 +329,31 @@
 }
 
 .button_information {
-    background: none; /* Sin fondo */
+    display: flex;
+    justify-content: flex-start; /* Alinea el botón a la izquierda */
+}
+
+.text-only {
+    background: none;/* Sin fondo */
     border: none; /* Sin borde */
-    color: blue; /* Color del texto azul */
-    font-size: 16px; /* Ajusta el tamaño de la fuente según lo necesites */
+    color: #2571b2; /* Color del texto azul */
+    font-size: 14px; /* Ajusta el tamaño de la fuente según lo necesites */
     cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
     padding: 5px; /* Opcional: ajusta el espaciado */
     text-decoration: none; /* Sin subrayado */
 }
 
-.button_information:hover {
+.text-only:hover {
     text-decoration: underline; /* Subraya el texto al pasar el cursor */
-    color: darkblue; /* Cambia el color al pasar el cursor */
+    color: #2571b2; /* Cambia el color al pasar el cursor */
 }
-
 
 .add-review-btn {
     background-color: #3e9dfc; /* Color de fondo */
     color: white; /* Color del texto */
     padding: 5px 0; /* Tamaño del botón */
     border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 2px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor cuando pase por encima */
     font-size: 17px; /* Tamaño de la fuente */
     width: 90%;
