@@ -14,23 +14,26 @@
 
 </head>
 <body>
-  <header> 
+  <header class="mb-4">
     <nav class="navbar">
         <div class="logo">
-            <img src="Imagenes/logo_navbar.png" alt="Recorriendo mi pulgarcito">
+            <img src="IMAGENES/logo_navbar.png" alt="Recorriendo mi pulgarcito">
         </div>
-        <ul  class ="nav justify-content-center" >
+        <ul class="nav justify-content-center">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
             <li><a href="#">Tours</a></li>
             <li><a href="#">Experiencias</a></li>
-            <li><a href="#">Blog y Testimonios</a></li>
+            <li><a href="#">Blog & Testimonios</a></li>
             <li><a href="#">Galería</a></li>
-        </ul>​​
-        <div  class ="auth-links" >
-            <button>Registro</button>
-            <button>Inicio de Sesión</button>
-        </div>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" id="accountDropdown">Mi Cuenta</a>
+                <ul class="dropdown-menu" id="accountDropdownMenu">
+                    <li><a href="perfil.html" id="PerfilLink">Perfil</a></li>
+                    <li><a href="#" id="LogoutLink">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
   </header>
 

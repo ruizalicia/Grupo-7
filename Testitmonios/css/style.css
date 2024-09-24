@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 .testimonials{
     display: flex;
     flex-direction: column;
@@ -294,6 +307,8 @@
     display: flex;
     justify-content:center;
     margin-bottom: 40px;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
 }
 
 .col-md-6{
@@ -408,3 +423,9 @@
     border: 1px solid #ccc;
 }
 
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
