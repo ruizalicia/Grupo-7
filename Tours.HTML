@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/Tours.css">
     <title>Recorriendo mi Pulgarcito - Tours</title>
-    <link rel="stylesheet" href="Tours.CSS">
-</head>
+</head
+>
 <body>
-    <header>
-        <nav>
-            <img src="Logos/logo_navbar.png" alt="Recorriendo mi Pulgarcito">
-            <ul>
+    <header class="mb-4">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes_tour/logo_navbar.png" alt="Recorriendo mi pulgarcito">
+            </div>
+            <ul class="nav justify-content-center">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Tours</a></li>
                 <li><a href="#">Experiencias</a></li>
                 <li><a href="#">Blog & Testimonios</a></li>
                 <li><a href="#">Galería</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="accountDropdown">Mi Cuenta</a>
+                    <ul class="dropdown-menu" id="accountDropdownMenu">
+                        <li><a href="perfil.html" id="PerfilLink">Perfil</a></li>
+                        <li><a href="#" id="LogoutLink">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
             </ul>
-            <div class="auth">
-                <a href="#">Registrarte</a>
-                <a href="#">Iniciar Sesión</a>
-            </div>
         </nav>
     </header>
+
     <main>
         <section class="hero">
             <img src="hero-image.jpg" alt="Hero Image">
@@ -77,42 +85,58 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Dirección:</h3>
-                <p>Edificio Century Tower, Nivel 10 y 11 - 243 Cal. San Benito San Salvador CP 10101</p>
-                <h3>Teléfono:</h3>
-                <p>+503 2227-7777</p>
-                <h3>Correo:</h3>
-                <p>recorriendomipulgarcito.com</p>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="column">
+                <img src="imagenes_tour/logo_footer.png" alt="Recorriendo mi Pulgarcito Logo" style="width: 200px;">
             </div>
-            <div class="footer-links">
+            <div class="column">
+                <h5>Dirección:</h5>
+                <p>Edificio Century Tower, Nivel 10 y 11 #243 Col. San Benito San Salvador CP, 1101</p>
+                <h5>Horario:</h5>
+                <p>Lunes a viernes: 8:00 am - 5:00 pm</p>
+                <h5>Teléfono:</h5>
+                <p>+503 2257-7777</p>
+                <h5>Correo:</h5>
+                <p>recorriendo@mipulgarcito.com</p>
+            </div>
+            <div class="column">
                 <h3>Acerca de</h3>
                 <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Destinos populares</a></li>
-                    <li><a href="#">Experiencias</a></li>
+                    <li>Sobre nosotros</li>
+                    <li>Blog</li>
+                    <li>Destinos populares</li>
+                    <li>Experiencias</li>
                 </ul>
             </div>
-            <div class="legal-info">
+            <div class="column">
                 <h3>Información Legal</h3>
                 <ul>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li>Términos y condiciones</li>
+                    <li>Política de Privacidad</li>
+                    <li>FAQ</li>
                 </ul>
             </div>
         </div>
-        <div class="social-media">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
-            <a href="#"><img src="spotify.png" alt="Spotify"></a>
-            <a href="#"><img src="tripadvisor.png" alt="TripAdvisor"></a>
+        
+        <!-- Línea separadora -->
+        <div class="footer-separator"></div>
+    
+        <div class="social-icons">
+            <a href="#"><img src="imagenes_tour/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagenes_tour/insragram.png" alt="Instagram"></a>
+            <a href="#"><img src="imagenes_tour/spotify.png" alt="Spotify"></a>
+            <a href="#"><img src="imagenes_tour/whatsapp.png" alt="whatsapp"></a>
+            <a href="#"><img src="imagenes_tour/linkedin.png" alt="linkedin"></a>
         </div>
-        <p>&copy; RECORRIENDO MI PULGARCITO 2024. TODOS LOS DERECHOS RESERVADOS</p>
+        <div class="copyright" >
+            &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
+        </div>
     </footer>
+
+    <script src="JS/script.js"></script>
+
 </body>
 </html>
