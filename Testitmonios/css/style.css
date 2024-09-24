@@ -365,13 +365,13 @@
 
 .add-review-btn {
     background-color: #3e9dfc; /* Color de fondo */
-    color: white; /* Color del texto */
+    color: #ffffff; /* Color del texto */
     padding: 5px 0; /* Tamaño del botón */
     border: none; /* Sin bordes */
     border-radius: 2px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor cuando pase por encima */
     font-size: 17px; /* Tamaño de la fuente */
-    width: 90%;
+    width: 96%;
     display:block;
     margin: 0 auto;
 }
@@ -389,20 +389,21 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4); /* Fondo oscuro */
+    background-color: #ffffff70; /* Fondo oscuro */
   }
   
   .modal-content {
-    background-color: rgb(188, 208, 224);
+    background-color: #ffffff;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
+    border: 1px solid #ffffff;
+    width: 27%;
+    max-width: 450px;
     border-radius: 5px;
   }
   
   .close {
-    color: #aaa;
+    color: #111111;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -410,7 +411,7 @@
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: #FFB703;
     text-decoration: none;
     cursor: pointer;
   }
@@ -419,8 +420,26 @@
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: #ffb80365;
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+/* Estilo del botón de enviar */
+.send-button {
+    background-color: #EA7700; /* Color de fondo */
+    color: #070707; /* Color del texto */
+    padding: 8px 8px; /* Tamaño del botón */
+    border: none; /* Sin bordes */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando pase por encima */
+    font-size: 16px; /* Tamaño de la fuente */
+    width: 30%; /* Ancho del botón */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.send-button:hover {
+    background-color: #D1460B; /* Cambia de color cuando se pasa el mouse */
 }
 
 @media (max-width: 768px) {
