@@ -10,7 +10,6 @@
     }
 }
 
-
 .hero-section {
     display: block;
     position: relative;
@@ -19,8 +18,11 @@
     overflow: hidden;
     background-size: cover; /* Asegura que la imagen cubra toda la sección */
     background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat; 
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier padding *//* Evita que la imagen se repita */
 }
+
 .hero-section h1 {
     display: block;
     position: absolute;
@@ -34,6 +36,7 @@
     font-size: 53px;
     font-weight: 800;
     color: #2571BC;
+    object-fit: cover;
 }
 
 .hero-section img {

@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
 .testimonials{
     display: flex;
     flex-direction: column;
@@ -34,295 +27,168 @@
     color: #111111;
 }
 
-.tours {
-    display: block;
-    position: relative;
-    margin-top: 2%;
-    width: 100%;
-    height: 83vh;
-    overflow: hidden;
+#tours {
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh; 
+    flex-direction: column; 
 }
 
-.tours h1 {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    width: auto;
-    font-size: 28px;
+#tours h1 {
+    font-size: 35px;
     font-weight: 700;
     color: #2571BC;
+    margin: 0; 
 }
-.tours h2 {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    width: auto;
-    font-style: italic; /* Agregar cursiva */
-    font-size: 14px;
+
+#tours h2 {
+    font-style: italic; 
+    font-size: 22px;
     font-weight: 400;
-    color: #0c0c0c;
-    line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
+    margin: 0; 
 }
 
 .tour_container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
     width: 85%;
     margin: 0 auto;
-    margin-top: 50px; /* Espacio arriba de la sección */
+    margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
     background-color: #8ECAE6;
 }
 
-.tours_box{
-    border-radius: 3px;
+.tours_box {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
     background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden; 
     text-align: center; 
-    padding: 20px 15px;
-    margin: 20px;
+    padding: 30px 20px;
+    margin: 10px;
     max-width: 1200px;
-    flex-shrink: 1;
-    box-sizing: border-box;
 }
 
 .tours_box img {
     width: 95%;
-    height: 190px;
+    height: 240px;
     margin-bottom: 3px;
-}
-
-.tours_box h4, h5, h6, p {
-    margin: 3px 0; 
-    text-align: justify;
+    border-radius: 2px;
 }
 
 .tours_box h4{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 16px;
     color: #2571BC;
     font-weight: 655;
 }
 
 .tours_box h5{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 15px;
     color: #EA7700;
 }
 .tours_box h6{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 14px;
 }
 .tours_box p{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 13px;
     color: #0c0b0b;
 }
 
-.experience {
-    display: block;
-    position: relative;
-    margin-top: 2%;
-    width: 100%;
-    height: 83vh;
-    overflow: hidden;
+#experience {
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 90vh; 
+    flex-direction: column; 
 }
 
-.experience h1 {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    width: auto;
-    font-size: 28px;
+#experience h1 {
+    font-size: 35px;
     font-weight: 700;
-    color: #FFB703;
+    color: #eaac00;
+    margin: 0;
 }
-.experience h2 {
-    display: block;
-    position: absolute;
-    text-align: center;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    width: auto;
-    font-style: italic; /* Agregar cursiva */
-    font-size: 14px;
+#experience h2 {
+    font-style: italic;
+    font-size: 22px;
     font-weight: 400;
-    color: #0c0c0c;
-    line-height: 1.5; /* Mejora la legibilidad aumentando el espaciado entre líneas */
+    margin: 0;
 }
 
 .experience_container{
     display: flex;
-    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
     width: 85%;
     margin: 0 auto;
-    margin-top: 50px; /* Espacio arriba de la sección */
+    margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
     background-color: #ff7322;
 }
 
 .experience_box{
-    border-radius: 3px;
+    flex: 0 0 30%; 
+    margin-bottom: 20px;
     background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden; 
     text-align: center; 
-    padding: 20px 15px;
-    margin: 20px;
+    padding: 30px 20px;
+    margin: 10px;
     max-width: 1200px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%; 
-    box-sizing: border-box;
 }
 
 .experience_box img {
     width: 95%;
-    height: 190px;
+    height: 240px;
     margin-bottom: 3px;
-}
-
-.experience_box h4, h5, h6, p {
-    margin: 3px 0; 
-    text-align: justify;
+    border-radius: 2px;
 }
 
 .experience_box h4{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 16px;
     color:#94bfe6;
     font-weight: 655;
 }
 
 .experience_box h5{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 15px;
     color: #ffe927;
 }
 .experience_box h6{
-    font-size: 14px;
-}
-.experience_box p{
-    font-size: 13px;
-    color: #0c0b0b;
-}
-
-.blog{
-    display: flex;
-    flex-direction: column;
-    font-family: "Open Sans", sans-serif;
-}
-
-.blog h1{
-    text-align: center;
-    font-weight: 745;
-    font-size: 35px;
-    color: #D1460B;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.blog h2{
-    font-size: 15px;
-    white-space: nowrap;  
-    text-align: center;
-    color: #111111;
-} 
-
-.blog_container{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 50px; /* Espacio arriba de la sección */
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color:  #FFB703;
-}
-
-.blog_box{
-    border-radius: 3px;
-    background-color:  #94bfe6;
-    text-align: center; 
-    padding: 17px 15px;
-    margin: 25px;
-    max-width: 1200px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%; 
-    box-sizing: border-box;
-}
-
-.blog_box img {
-    width: 97%;
-    height: 270px;
-    margin-bottom: 3px;
-}
-
-.blog_box h5, p {
     margin: 3px 0; 
     text-align: justify;
+    font-size: 14px;
 }
 
-.blog_box h5{
-    font-size: 16px;
-    color: #D1460B;
-    font-weight: 655;
-}
-
-.blog_box p{
+.experience_box p{
+    margin: 3px 0; 
+    text-align: justify;
     font-size: 13px;
     color: #0c0b0b;
-}
-
-.button_blog button {
-    background-color: #2571BC; 
-    color: #070707;              
-    padding: 10px 20px;        
-    border: none;              
-    border-radius: 5px;        
-    cursor: pointer;           
-    font-size: 16px;          
-    font-weight: bold;         
-    transition: background-color 0.3s ease; 
-}
-
-.button_blog button:hover {
-    background-color: #EA7700; 
-}
-
-.button_blog button:active {
-    background-color: #f8d613;
-    transform: scale(0.98);    
-}
-
-.col-md-4{
-    display: flex;
-    justify-content:center;
-    margin-bottom: 40px;
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-}
-
-.col-md-6{
-    display: flex;
-    justify-content:center;
-    margin-bottom: 40px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .rating {
@@ -345,35 +211,43 @@
 
 .button_information {
     display: flex;
-    justify-content: flex-start; /* Alinea el botón a la izquierda */
+    justify-content: flex-start;
 }
 
 .text-only {
-    background: none;/* Sin fondo */
-    border: none; /* Sin borde */
-    color: #2571b2; /* Color del texto azul */
-    font-size: 14px; /* Ajusta el tamaño de la fuente según lo necesites */
-    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
-    padding: 5px; /* Opcional: ajusta el espaciado */
-    text-decoration: none; /* Sin subrayado */
+    background: none;
+    border: none;
+    color: #2571b2;
+    font-size: 14px; 
+    cursor: pointer; 
+    padding: 5px; 
+    text-decoration: none; 
 }
 
 .text-only:hover {
-    text-decoration: underline; /* Subraya el texto al pasar el cursor */
-    color: #2571b2; /* Cambia el color al pasar el cursor */
+    text-decoration: underline;
+    color: #2571b2; 
+}
+
+.add-review-section {
+    width: 100vw;
+    display: flex; 
+    justify-content: center; 
 }
 
 .add-review-btn {
-    background-color: #3e9dfc; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    padding: 5px 0; /* Tamaño del botón */
-    border: none; /* Sin bordes */
-    border-radius: 2px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor cuando pase por encima */
-    font-size: 17px; /* Tamaño de la fuente */
-    width: 96%;
-    display:block;
-    margin: 0 auto;
+    background-color: #3e9dfc; 
+    color: #ffffff;
+    padding: 10px;
+    border: none; 
+    border-radius: 2px;
+    cursor: pointer; 
+    font-size: 17px; 
+    width: 100%;
+    max-width: 1200px; 
+    box-sizing: border-box; 
+    margin: 10px; 
+    text-align: center; 
 }
 
 .add-review-btn:hover {
@@ -425,26 +299,102 @@
     width: 100%;
 }
 
-/* Estilo del botón de enviar */
 .send-button {
-    background-color: #EA7700; /* Color de fondo */
-    color: #070707; /* Color del texto */
-    padding: 8px 8px; /* Tamaño del botón */
-    border: none; /* Sin bordes */
-    border-radius: 3px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor cuando pase por encima */
-    font-size: 16px; /* Tamaño de la fuente */
-    width: 30%; /* Ancho del botón */
-    margin-top: 20px; /* Espacio superior */
+    background-color: #EA7700;
+    color: #070707; 
+    padding: 8px 8px;
+    border: none;
+    border-radius: 3px; 
+    cursor: pointer; 
+    font-size: 16px;
+    width: 30%;
+    margin-top: 20px; 
 }
 
 .send-button:hover {
-    background-color: #D1460B; /* Cambia de color cuando se pasa el mouse */
+    background-color: #D1460B; 
 }
 
-@media (max-width: 768px) {
-    .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+.blog{
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+.blog h1{
+    text-align: center;
+    font-weight: 745;
+    font-size: 35px;
+    color: #D1460B;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.blog h2{
+    font-size: 15px;
+    white-space: nowrap;  
+    text-align: center;
+    color: #111111;
+} 
+
+.blog_container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 25px; 
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 30px 30px;
+    background-color:  #2571BC;
+}
+
+.blog_box{
+    flex: 0 0 47%; 
+    background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden; 
+    text-align: center; 
+    padding: 25px 20px;
+    margin: 6px;
+    max-width: 1200px;
+}
+
+.blog_box img {
+    width: 97%;
+    height: 270px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+}
+
+.blog_box h5{
+    margin: 3px 0; 
+    text-align: justify;
+    font-size: 16px;
+    color: #D1460B;
+    font-weight: 655;
+}
+
+.blog_box p{
+    margin: 3px 0; 
+    text-align: justify;
+    font-size: 13px;
+    color: #0c0b0b;
+}
+
+.button_blog button {
+    background-color: #EA7700; 
+    color: #070707;              
+    padding: 10px 20px;        
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 16px;          
+    font-weight: bold;         
+    transition: background-color 0.3s ease; 
+}
+
+.button_blog button:hover {
+    background-color: #D1460B; 
 }
