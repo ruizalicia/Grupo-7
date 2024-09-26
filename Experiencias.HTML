@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recorriendo mi Pulgarcito</title>
-    <link rel="stylesheet" href="Experiencias.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/Experiencias.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-        </div>
+    <header class="mb-4">
         <nav class="navbar">
             <div class="logo">
-                <img src="Logos/logo_navbar.png" alt="Recorriendo mi Pulgarcito">
-            </div>        
+                <img src="imagenes_tour/logo_navbar.png" alt="Recorriendo mi pulgarcito">
+            </div>
             <ul class="nav justify-content-center">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
@@ -23,11 +21,14 @@
                 <li><a href="#">Experiencias</a></li>
                 <li><a href="#">Blog & Testimonios</a></li>
                 <li><a href="#">Galería</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="accountDropdown">Mi Cuenta</a>
+                    <ul class="dropdown-menu" id="accountDropdownMenu">
+                        <li><a href="perfil.html" id="PerfilLink">Perfil</a></li>
+                        <li><a href="#" id="LogoutLink">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
             </ul>
-            <div class="auth-links">
-                <button>Registro</button>
-                <button>Inicio de Sesión</button>
-            </div>
         </nav>
     </header>
 
@@ -42,148 +43,151 @@
                 momentos inolvidables y auténticos. ¡Únete a la diversión!
         </div>
 
-        <section class="experience">
-            <div class="experience-card">
-                <img src="imagenes_experiencias/experiencia_amapulapa.png" alt="Amalulapa">
-                    <div class="favorite"><span>♥</span></div>
-                        <h2>Dia recreativo en Amalulapa</h2>
-                            <h3><strong>Ubicación:</strong> Sonsonate, El Salvador</h3>
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
+        
+    <section class="experiences">
+        <div class="experiences-card">
+            <img src="imagenes_experiencias/experiencia_cafe.png" alt="Ruta del Café en Apaneca">
+                <div class="favorite"><span>♥</span></div>
+                    <h2>Ruta del Café en Apaneca</h2> <br>
+                        <h3><strong>Ubicación:</strong> Apaneca, Departamento de Ahuachapán, El Salvador.</h3>
+                            <div class="rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                                <div class="text-container">
+                                    <p class="text-content">Pintoresca localidad situada en la Ruta de las Flores, famosa por su producción de
+                                    café de alta calidad. Esta experiencia te lleva a una finca cafetera
+                                    donde aprendes sobre todo el proceso de producción del café, desde la siembra hasta
+                                    la taza. Incluye un recorrido por los cafetales, demostraciones de cosecha y procesamiento,
+                                    una sesión de cata de café donde podras degustar diferentes variedades y perfiles de sabor,
+                                    finalizando con un taller de barismo básico</p>
                                 </div>
-                                    <div class="text-container">
-                                        <p class="text-content">El Volcán de Izalco, conocido como el "Faro del Pacífico" por su continua actividad
-                                        en el pasado; La caminata hacia la cima atraviesa paisajes diversos, desde densos bosques
-                                        hasta campos de lava. Puedes explorar el cráter y disfrutar de vistas panorámicas. 
-                                        Incluye transporte, guía local, y un picnic en la cumbre.</p>
-                                    </div>
-                                        <a class="more-info-link">Más información</a>      
-                                            <h4>$30 Precio por persona</h4>
-                                                <button class="tours-button">Reservar ahora</button>
-                                                    </div>
-    
-            <div class="tour-card">
-                <img src="imagenes_tour/tour_tazumal.png" alt="Ruinas de Tazumal">
-                    <div class="favorite"><span>♥</span></div>    
-                        <h2>Ruinas de Tazumal y Chalchuapa</h2>
-                            <h3><strong>Ubicación:</strong> Santa Ana, El Salvador</h3>
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
+                                    <a class="more-info-link">Más información</a>
+                                        <h4>Precio por persona: <strong>$30</strong></h4>
+                                            <button class="experiences-button">Reservar ahora</button>
+                                                </div>
+
+        <div class="experiences-card">
+            <img src="imagenes_experiencias/experiencia_rancho.png" alt="Rancho Papa">
+                <div class="favorite"><span>♥</span></div>
+                    <h2>Noche de camping en Rancho Papa Toño</h2>
+                        <h3><strong>Ubicación:</strong> Apaneca, Departamento de Ahuachapán, El Salvador.</h3>
+                            <div class="rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                                <div class="text-container">
+                                    <p class="text-content">Experiencia única en la orilla del Río Lempa; Ideal para  disfrutar 
+                                    de actividades como camping, senderismo por un pueblo abandonado y tres cascadas, 
+                                    cada una con 50 metros de altura, pesca, rafting y tubing, además de una amplia variedad de 
+                                    platillos salvadoreños. Se proporciona equipo de acampado y senderismo.</p>
                                 </div>
-                                    <div class="text-container">
-                                        <p class="text-content">Complejo arqueológico maya ubicado en Chalchuapa.  El tour incluye una visita guiada por las 
-                                        ruinas de Tazumal, donde los visitantes aprenderán sobre la historia y cultura maya. Después, 
-                                        el recorrido continúa hacia el centro de Chalchuapa para explorar otros sitios arqueológicos cercanos, 
-                                        como la Laguna de las Iguanas. Incluye transporte, entradas, y guía local.</p>
-                                    </div>
-                                        <a class="more-info-link">Más información</a>
-                                            <h4>$30 Precio por persona</h4>
-                                                <button class="tours-button">Reservar ahora</button>
-                                                    </div>
-    
-            <div class="tour-card">
-                <img src="imagenes_tour/tour_playa.png" alt="Playa El Tunco">
-                    <div class="favorite"><span>♥</span></div>
-                        <h2>Surf en Playa El Tunco</h2> <br>
-                            <h3><strong>Ubicación:</strong> La Libertad, El Salvador</h3>
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
+                                    <a class="more-info-link">Más información</a>
+                                        <h4>Precio por persona: <strong>$25</strong></h4>
+                                            <button class="experiences-button">Reservar ahora</button>
+                                                </div>
+
+        <div class="experiences-card">
+            <img src="imagenes_experiencias/experiencia_pital.png" alt="Cerro El Pital">
+                <div class="favorite"><span>♥</span></div>
+                    <h2>Cerro El Pital</h2><br>
+                        <h3><strong>Ubicación:</strong>San Ignacio, Chalatenango, El Salvador</h3>               
+                            <div class="rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                                <div class="text-container">
+                                    <p class="text-content"> Ubicado en la frontera entre El Salvador y Hondura,  a 2,730 m sobre
+                                    el nivel del mar, siendo el punto más alto de El Salvador, con una zona de acampar entre los 
+                                    dos picos de la montaña, con un corredor de viento con una agradable neblina que te acompañará 
+                                    durante tu estancia en este hermoso lugar, la estancia tambien incluye seciones de senderismo
+                                    hacia mirador natural denominado Peña Rajada.</p>
                                 </div>
-                                    <div class="text-container">
-                                        <p  class="text-content">Playa El Tunco es famosa por sus olas perfectas para el surf y su ambiente relajado.
-                                        Este tour incluye clases de surf con instructores profesionales, equipo de surf y tiempo 
-                                        libre para practicar. Los participantes también podrán disfrutar del ambiente playero, con 
-                                        tiempo para relajarse y explorar los alrededores. Incluye transporte, equipo de surf, y guía local.</p>
-                                    </div>
-                                        <a class="more-info-link">Más información</a>
-                                            <h4>$30 Precio por persona</h4>
-                                                <button class="tours-button">Reservar ahora</button>
-                                                    </div>
-    
-            <div class="tour-card">
-                <img src="imagenes_tour/tour_cascadas.png" alt="Cascadas en Juayúa">
-                    <div class="favorite"><span>♥</span></div>   
-                        <h2>Cascadas en Juayúa</h2> <br>
-                            <h3><strong>Ubicación:</strong> Sonsonate, El Salvador</h3>
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
+                                    <a class="more-info-link">Más información</a>
+                                    <h4>Precio por persona: <strong>$30</strong></h4>
+                                            <button class="experiences-button">Reservar ahora</button>
+                                                </div>
+
+        <div class="experiences-card">
+            <img src="imagenes_experiencias/experiencia_montaña.png" alt="El espiritu de la montaña">
+                <div class="favorite"><span>♥</span></div>
+                    <h2>Mirador El Espiritu de la Montaña</h2>
+                        <h3><strong>Ubicación:</strong>Volcán de Conchagua, Conchagua, El Salvador</h3>               
+                            <div class="rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                                <div class="text-container">
+                                    <p class="text-content">Centro Vacacional para toda la familia, cuentan con restaurante, 
+                                    mirador privado con vistas a gran variedad de islas de El Salvador,Honduras y Nicaragua, 
+                                    Senderismo, Camping y una conexión con la naturaleza única en El Salvador. Se realizan 2 
+                                    viajes al día, el primer viaje a las 04:45 de la mañana para presenciar el amanecer 
+                                    y el segundo a las 03:00 de la tarde para presenciar el atardecer.</p>
                                 </div>
-                                    <div class="text-container">
-                                        <p  class="text-content">Este tour guiado lleva a los visitantes por una serie de cascadas impresionantes, donde pueden nadar y 
-                                        disfrutar de la naturaleza. Incluye caminatas por senderos escénicos y tiempo para relajarse en las piscinas 
-                                        naturales. El tour también ofrece un almuerzo típico salvadoreño. Incluye transporte, guía local, y almuerzo.</p>
-                                    </div>
-                                        <a class="more-info-link">Más información</a>
-                                            <h4>$30 Precio por persona</h4>
-                                                <button class="tours-button">Reservar ahora</button>
-                                                    </div>
-    
-            <div class="tour-card">
-                <img src="imagenes_tour/tour_suchi.png" alt="Pueblo mágico de Suchitoto">
-                    <div class="favorite"><span>♥</span></div>    
-                        <h2>Pueblo mágico de Suchitoto</h2> <br>
-                            <h3><strong>Ubicación:</strong> Cuscatlán, El Salvador</h3>
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
+                                    <a class="more-info-link">Más información</a>
+                                    <h4>Precio por persona: <strong>$30</strong></h4>
+                                            <button class="experiences-button">Reservar ahora</button>
+                                                </div>
+                                        
+        <div class="experiences-card">
+            <img src="imagenes_experiencias/experiencia_amapulapa.png" alt="Amalulapa">
+                <div class="favorite"><span>♥</span></div>
+                    <h2>Día recreativo en Amalulapa</h2> <br>
+                        <h3> <strong>Ubicación:</strong> San Vicente, San Vicente</h3>  <br>             
+                            <div class="rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                                <div class="text-container">
+                                    <p class="text-content"> Ubicado cerca de la ciudad de San Vicente a 60 kilómetros al 
+                                    oriente de San Salvador y con una extensión de 33 manzanas de terreno. La experiencia 
+                                    cuenta con acceso a cuatro piscinas naturales para adultos, un tobogán acuático, 
+                                    tres piscinas para niños con juegos interactivos, áreas de descanso, picnic, cabañas, 
+                                    estacionamiento, restaurantes, entre otros. </p>
                                 </div>
-                                    <div class="text-container">
-                                        <p class="text-content">Suchitoto es un municipio del departamento de Cuscatlán, ambientado en la época precolombina,
-                                        Puedes elegir entre visitar, Lago Suchitlán, lago artificial fue creado por medio de un embalse en 
-                                        1973 y ofrece múltiples servicios como alimentación y áreas de descanso, Cascada Los Tercios, situada 
-                                        en la quebrada las Ánimas, a escasamente un kilómetro y medio del centro de la ciudad y el imperdible,
-                                        Iglesia de Santa Lucia, es uno de los principales atractivos de Suchitoto por su original estructura de
-                                        la época colonial.</p>
-                                    </div>
-                                        <a class="more-info-link">Más información</a>  
-                                            <h4>$30 Precio por persona</h4>
-                                                <button class="tours-button">Reservar ahora</button>
-                                                    </div>
-    
-            <div class="tour-card">
-                <img src="imagenes_tour/tour_coatepeque.png" alt="Lago Coatepeque">
-                    <div class="favorite"><span>♥</span></div>  
-                        <h2>Kayak en el Lago Coatepeque</h2>
-                            <h3><strong>Ubicación:</strong> La Libertad, El Salvador</h3>
-                                <div class="rating">
-                                    <span class="star" data-value="1">★</span>
-                                    <span class="star" data-value="2">★</span>
-                                    <span class="star" data-value="3">★</span>
-                                    <span class="star" data-value="4">★</span>
-                                    <span class="star" data-value="5">★</span>
+                                    <a class="more-info-link">Más información</a>
+                                    <h4>Precio por persona: <strong>$20</strong></h4>
+                                            <button class="experiences-button">Reservar ahora</button>
+                                                </div>
+
+        <div class="experiences-card">
+            <img src="imagenes_experiencias/casa cristal.jpg" alt="MONTAÑA CASA CRISTAL">
+                <div class="favorite"><span>♥</span></div>
+                    <h2>Montaña Casa de Cristal</h2><br>
+                        <h3><strong>Ubicación:</strong>Finca San Blas, Cerro Verde, Santa Ana, El Salvador.</h3>               
+                            <div class="rating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>                                      
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                                <div class="text-container">
+                                    <p class="text-content"> El parque en la Montaña Casa Cristal, es un lugar perfecto para descansar y 
+                                    relajars, es de clima frío y perfecto, cuenta con área de camping, senderismo, mirador al volcán de Izalco,
+                                    y el volcán de Santa Ana y tiene acceso a jardines en donde se puede apreciar la belleza de la flora y fauna.</p>
                                 </div>
-                                    <div class="text-container">
-                                        <p class="text-content">Lago de origen volcánico que cuenta con muchos miradores, restaurantes; El  tour ofrece una experiencia 
-                                        de kayak en las aguas tranquilas del Lago Coatepeque, explorando la costa y disfrutando del paisaje. 
-                                        También incluye tiempo para nadar y relajarse en la orilla del lago. Incluye transporte, equipo de kayak y charla 
-                                        instructiva y guía local.</p>
-                                    </div>
-                                        <a class="more-info-link">Más información</a>
-                                            <h4>$30 Precio por persona</h4>
-                                                <button class="tours-button">Reservar ahora</button>
-                                                    </div>
-        </section>
-    
-    
+                                    <a class="more-info-link">Más información</a>
+                                        <h4>Precio por persona: <strong>$30</strong></h4>
+                                            <button class="experiences-button">Reservar ahora</button>
+                                                </div>
+    </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="column">
@@ -231,10 +235,10 @@
                 &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
             </div>
         </footer>
-    
+            
         <script src="JS/script.js"></script>
         <script src="JS/Mostrar_información.js"></script>
         <script src="JS/Calificar_y_guardar.js"></script>
-    
+
     </body>
     </html>

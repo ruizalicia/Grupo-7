@@ -46,7 +46,7 @@ body {
 }
 
 .tour-card {
-    background-color: #ccc;
+    background-color:#dfdcdcd3;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 40px;
@@ -65,15 +65,15 @@ body {
 
 .tour-card .favorite {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    color: #0d497e;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    color: #6d6c6a;
     cursor: pointer;
 }
 
 .tour-card .favorite.selected {
-    color: #D1460B;
+    color: #f81414;
 }
 
 .tour-card h2 {
@@ -88,6 +88,8 @@ body {
 
 .tour-card h3 {
     font-size: 13px;
+    font-weight: normal;
+    color: #4d4949;;
     margin: 0px;
     padding: 13px;
     text-align: justify;
@@ -108,7 +110,7 @@ body {
 
 .tour-card h4 {
     font-size: 17px;
-    font-weight: 700;
+    font-weight:normal;
     color: #EA7700;
     padding: 12px;
     margin-top: 1px;
