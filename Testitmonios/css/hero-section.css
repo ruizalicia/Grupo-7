@@ -1,46 +1,377 @@
-.hero-section {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 81vh;
-    overflow: hidden;
-    background-size: cover; /* Asegura que la imagen cubra toda la sección */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; 
-    margin: 0; /* Elimina cualquier margen */
-    padding: 0; /* Elimina cualquier padding *//* Evita que la imagen se repita */
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Ajusta la altura a un tamaño más pequeño */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Asegura que no haya margen superior o inferior */
+}
+
+/* Nav Adjustment */
+nav + .hero-section {
+    margin-top: 0; /* Elimina cualquier espacio entre el nav y la sección */
+}
+
+/* Hero Section Heading */
 .hero-section h1 {
-    display: block;
     position: absolute;
-    text-align: center;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5px;
-    width: auto;
-    font-family: cabin sketch;
+    font-family: 'Cabin Sketch', sans-serif;
     font-size: 53px;
     font-weight: 800;
     color: #2571BC;
-    object-fit: cover;
-}
-
-.hero-section img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin distorsionarse */
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
     .hero-section {
-        height: 100vh; /* Para pantallas más grandes, que ocupe toda la altura */
+        height: 60vh; /* Ajuste adicional para pantallas grandes */
     }
 }
 
 @media (max-width: 768px) {
     .hero-section h1 {
-        font-size: 36px; /* Ajusta el tamaño del texto en dispositivos más pequeños */
+        font-size: 36px;
     }
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: #D1460B;
+    margin: 30px 0 10px;
+}
+
+.testimonials h2 {
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    color: #111111;
+}
+
+/* Tours Section */
+#tours,
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+#tours h1,
+#experience h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#tours h1 {
+    color: #2571BC;
+}
+
+#experience h1 {
+    color: #FFB703;
+}
+
+#tours h2,
+#experience h2 {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Container Styles */
+.tour_container,
+.experience_container,
+.blog_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.tour_container {
+    background-color: #8ECAE6;
+}
+
+.experience_container {
+    background-color: #EA7700;
+}
+
+.blog_container {
+    background-color: #2571BC;
+    padding: 30px;
+    gap: 25px;
+}
+
+/* Box Styles */
+.tours_box,
+.experience_box,
+.blog_box {
+    flex: 0 0 30%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 10px;
+    max-width: 1200px;
+}
+
+.tours_box img,
+.experience_box img,
+.blog_box img {
+    width: 95%;
+    height: 240px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+}
+
+/* Text Styles */
+.tours_box h4,
+.experience_box h4,
+.blog_box h5 {
+    margin: 3px 0;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 655;
+}
+
+.tours_box h4 {
+    color: #2571BC;
+}
+
+.experience_box h4 {
+    color: #94bfe6;
+}
+
+.blog_box h5 {
+    color: #D1460B;
+}
+
+.tours_box h5,
+.experience_box h5 {
+    margin: 3px 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.tours_box h5 {
+    color: #EA7700;
+}
+
+.experience_box h5 {
+    color: #ffe927;
+}
+
+.tours_box h6,
+.experience_box h6 {
+    margin: 3px 0;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.tours_box p,
+.experience_box p,
+.blog_box p {
+    margin: 3px 0;
+    text-align: justify;
+    font-size: 13px;
+    color: #0c0b0b;
+}
+
+/* Rating Section */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.selected {
+    color: gold;
+}
+
+/* Button Styles */
+.button_information {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text-only {
+    background: none;
+    border: none;
+    color: #2571b2;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.text-only:hover {
+    text-decoration: underline;
+    color: #2571b2;
+}
+
+.add-review-section {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.add-review-btn {
+    background-color: #3e9dfc;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.add-review-btn:hover {
+    background-color: #2571BC;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 27%;
+    max-width: 450px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #111111;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #FFB703;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Elements */
+input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffb80365;
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+.send-button {
+    background-color: #EA7700;
+    color: #070707;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.send-button:hover {
+    background-color: #D1460B;
+}
+
+/* Blog Section */
+.blog {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blog h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: #D1460B;
+    margin: 30px 0 10px;
+}
+
+.blog h2 {
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    color: #111111;
+}
+
+/* Blog Buttons */
+.button_blog button {
+    background-color: #EA7700;
+    color: #070707;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button_blog button:hover {
+    background-color: #D1460B;
 }
