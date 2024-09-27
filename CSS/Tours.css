@@ -17,21 +17,38 @@ body {
     display: block;
 }
 
-.tour_presentation{
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupará el ancho completo de la pantalla */
+    height: 50vh; /* Ajusta este valor para controlar la altura (50vh = 50% de la altura de la ventana) */
+    background-color: #f4f4f4; /* Puedes cambiar el color de fondo según sea necesario */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.hero-section img {
+    max-width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+}
+
+.tour_presentation {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .tour_presentation h1 {
     text-align: center;
-    font-weight: 745;
+    font-weight: 700;
     font-size: 35px;
     color: #D1460B;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.tour_presentation p{
+.tour_presentation p {
     font-size: 15px;
     white-space: nowrap;
     text-align: center;
@@ -41,19 +58,25 @@ body {
 .tours {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between; /* Distribuye las tarjetas en tres columnas */
     padding: 30px;
 }
 
 .tour-card {
-    background-color:#dfdcdcd3;
+    background-color: #dfdcdcd3;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 40px;
+    margin: 20px; /* Espacio entre las tarjetas */
     overflow: hidden;
-    width: 280px;
+    width: calc(33.333% - 40px); /* Ancho para tres columnas */
     text-align: center;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .tour-card img {
@@ -70,6 +93,7 @@ body {
     font-size: 30px;
     color: #6d6c6a;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .tour-card .favorite.selected {
@@ -82,39 +106,29 @@ body {
     margin: 0px;
     padding: 12px;
     color: #D1460B;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .tour-card h3 {
     font-size: 13px;
     font-weight: normal;
-    color: #4d4949;;
+    color: #4d4949;
     margin: 0px;
     padding: 13px;
     text-align: justify;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
-
-
-.tour-card p {
+.tour-card .text-container p {
     text-align: justify;
     font-size: 13px;
     margin: 4px 0;
     padding: 12px;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .tour-card h4 {
     font-size: 17px;
-    font-weight:normal;
+    font-weight: normal;
     color: #EA7700;
     padding: 12px;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .rating {
@@ -126,7 +140,8 @@ body {
 .star {
     font-size: 24px;
     cursor: pointer;
-    color:  #78828a;
+    color: #78828a;
+    transition: color 0.3s;
 }
 
 .star:hover,
@@ -135,31 +150,31 @@ body {
 }
 
 .tours-button {
-    background-color: #EA7700; 
-    color: #070707;              
-    padding: 10px 20px;        
-    border: none;      
-    margin-top: 1px;
-    margin-bottom: 19px;       
-    border-radius: 5px;        
-    cursor: pointer;           
-    font-size: 14px;          
-    font-weight: 600;        
-    transition: background-color 0.3s ease; 
+    background-color: #EA7700;
+    color: #070707;
+    padding: 10px 20px;
+    border: none;
+    margin: 1px 0 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 .tours-button:hover {
-    background-color: #D1460B; 
+    background-color: #D1460B;
 }
+
 .text-container {
     position: relative;
-    max-height: 100px; 
+    max-height: 100px;
     overflow: hidden;
     transition: max-height 0.5s ease;
 }
 
 .text-container.expanded {
-    max-height: 500px; 
+    max-height: 500px;
 }
 
 .more-info-link {
@@ -177,4 +192,102 @@ body {
     color: #D1460B;
 }
 
+/* Media Queries para mejorar la respuesta en dispositivos móviles */
+@media (max-width: 1024px) {
+    .tour-card {
+        width: calc(50% - 40px); /* 2 columnas en pantallas más pequeñas */
+    }
+}
 
+@media (max-width: 768px) {
+    .tour-card {
+        width: 90%; /* 1 columna en pantallas pequeñas */
+        margin: 10px auto; /* Acentuar el margen */
+    }
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #2571b2; /* Fondo del footer */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
+}
+
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+}
+
+.footer .column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .column h3,
+.footer .column h5 {
+    font-weight: bolder;
+}
+
+.footer .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alinear el logo a la derecha */
+.footer .column:first-child {
+    display: flex; /* Usar flex para el logo */
+    justify-content: flex-end; /* Alinear el logo a la derecha */
+    align-items: flex-start; /* Alinear verticalmente en el centro */
+}
+
+/* Estilo de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Línea separadora del footer */
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Texto del copyright */
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
+}
