@@ -48,6 +48,13 @@
     font-weight: bolder;
 }
 
+.footer .column:first-child {
+    display: flex; /* Usar flex para el logo */
+    justify-content: flex-end; /* Alinear el logo a la derecha */
+    align-items: flex-start; /* Alinear verticalmente en el centro */
+}
+
+
 /* Opcional: Ajustar el tamaño de las imágenes si es necesario */
 .column img {
     max-width: 100%;
