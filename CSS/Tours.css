@@ -19,11 +19,11 @@ body {
 
 .hero-section {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 100%; /* Ocupará el ancho completo de la pantalla */
-    height: 50vh; /* Ajusta este valor para controlar la altura (50vh = 50% de la altura de la ventana) */
-    background-color: #f4f4f4; /* Puedes cambiar el color de fondo según sea necesario */
+    height: 50vh; /* Ajusta este valor para controlar la altura */
+    background-color: #f4f4f4; /* Color de fondo */
     overflow: hidden; /* Evita que la imagen se desborde */
 }
 
@@ -37,22 +37,21 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    text-align: center; /* Centrar el texto */
 }
 
 .tour_presentation h1 {
-    text-align: center;
     font-weight: 700;
     font-size: 35px;
     color: #D1460B;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px; /* Unificación de márgenes */
 }
 
 .tour_presentation p {
     font-size: 15px;
-    white-space: nowrap;
-    text-align: center;
     color: #111111;
+    max-width: 800px; /* Limitar el ancho para mejor legibilidad */
+    margin: 0 auto; /* Centrar el texto */
 }
 
 .tours {
@@ -131,6 +130,17 @@ body {
     padding: 12px;
 }
 
+.favorite {
+    font-size: 50px; /* Ajusta este valor para cambiar el tamaño */
+    transition: transform 0.3s ease; /* Animación suave para el hover */
+}
+
+/* Si quieres que cambie de tamaño al pasar el ratón */
+.favorite:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+}
+
+
 .rating {
     display: flex;
     justify-content: center;
@@ -154,12 +164,12 @@ body {
     color: #070707;
     padding: 10px 20px;
     border: none;
-    margin: 1px 0 19px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    margin: 10px 0; /* Margen más uniforme */
 }
 
 .tours-button:hover {

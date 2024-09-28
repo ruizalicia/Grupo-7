@@ -18,9 +18,26 @@ body {
     display: block;
 }
 
-.experience_presentation{
+.hero-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%; /* Ocupará el ancho completo de la pantalla */
+    height: 50vh; /* Ajusta este valor para controlar la altura */
+    background-color: #f4f4f4; /* Color de fondo */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.hero-section img {
+    max-width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+}
+
+.experience_presentation {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .experience_presentation h1 {
@@ -28,22 +45,20 @@ body {
     font-weight: 745;
     font-size: 35px;
     color: #0d497e;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px; /* Unificación de márgenes */
 }
 
-.experience_presentation p{
+.experience_presentation p {
     font-size: 15px;
     white-space: nowrap;
     text-align: center;
     color: #111111;
 }
 
-
-.experiences{
+.experiences {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between; /* Cambiado a space-between para tres columnas */
     padding: 30px;
 }
 
@@ -51,9 +66,9 @@ body {
     background-color: #dfdcdcd3;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 40px;
+    margin: 20px; /* Espacio entre las tarjetas */
     overflow: hidden;
-    width: 280px;
+    width: calc(33.333% - 40px); /* Ajustado para tres columnas */
     text-align: center;
     position: relative;
 }
@@ -77,14 +92,13 @@ body {
 .experiences-card .favorite.selected {
     color: #f81414;
 }
+
 .experiences-card h2 {
     font-size: 18px;
     font-weight: 700;
     margin: 0px;
     padding: 12px;
     color: #2571BC;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .experiences-card h3 {
@@ -94,17 +108,13 @@ body {
     margin: 0px;
     padding: 13px;
     text-align: justify;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
-.experiences-card p {
+.experiences-card .text-container p {
     text-align: justify;
     font-size: 13px;
     margin: 4px 0;
     padding: 12px;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .experiences-card h4 {
@@ -112,8 +122,6 @@ body {
     font-weight: normal;
     color: #0d497e;
     padding: 12px;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .rating {
@@ -125,7 +133,7 @@ body {
 .star {
     font-size: 24px;
     cursor: pointer;
-    color:  #78828a;
+    color: #78828a;
 }
 
 .star:hover,
@@ -177,38 +185,102 @@ body {
     background-color: #2571BC; 
 }
 
- /* Estilos del modal */
- .modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+/* Media Queries para mejorar la respuesta en dispositivos móviles */
+@media (max-width: 1024px) {
+    .experiences-card {
+        width: calc(50% - 40px); /* 2 columnas en pantallas más pequeñas */
+    }
 }
 
-.modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
+@media (max-width: 768px) {
+    .experiences-card {
+        width: 90%; /* 1 columna en pantallas pequeñas */
+        margin: 10px auto; /* Acentuar el margen */
+    }
 }
 
-/* Botón de cerrar */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* Estilo del footer */
+.footer {
+    background-color: #2571b2; /* Fondo del footer */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    cursor: pointer;
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+}
+
+.footer .column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .column h3,
+.footer .column h5 {
+    font-weight: bolder;
+}
+
+.footer .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alinear el logo a la derecha */
+.footer .column:first-child {
+    display: flex; /* Usar flex para el logo */
+    justify-content: flex-end; /* Alinear el logo a la derecha */
+    align-items: flex-start; /* Alinear verticalmente en el centro */
+}
+
+/* Estilo de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Línea separadora del footer */
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Texto del copyright */
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
 }
