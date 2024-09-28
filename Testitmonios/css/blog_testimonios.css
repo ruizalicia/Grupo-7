@@ -16,25 +16,6 @@ body {
     display: block;
 }
 
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-    p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 24px;
-    }
-    p {
-        font-size: 14px;
-    }
-}
-
 /* Testimonials Section */
 .testimonials {
     display: flex;
@@ -376,4 +357,18 @@ input[type="file"] {
 
 .button_blog button:hover {
     background-color: #D1460B;
+}
+
+/* Media Queries para mejorar la respuesta en dispositivos móviles */
+@media (max-width: 1024px) {
+    .tour-card {
+        width: calc(50% - 40px); /* 2 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-card {
+        width: 90%; /* 1 columna en pantallas pequeñas */
+        margin: 10px auto; /* Acentuar el margen */
+    }
 }
