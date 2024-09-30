@@ -1,0 +1,225 @@
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+main.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Perfil Section */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+section.row {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.col-md-4 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Botón de editar perfil */
+.btn-outline-secondary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #3873a7;
+    color: white;
+}
+
+/* Listas de ubicación e idiomas */
+ul.list-unstyled li {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+ul.list-unstyled li img {
+    margin-right: 10px;
+}
+
+/* Sección de Favoritos */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #495057;
+}
+
+.card-text img {
+    margin-right: 8px;
+}
+
+/* Sección de Reservas y Viajes */
+.accordion-button {
+    background-color: #343a40;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+    background-color: #88bef5;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #495057;
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+}
+
+.accordion .card {
+    border: none;
+}
+
+.accordion .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.accordion .btn {
+    border-radius: 20px;
+}
+
+.accordion .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.accordion .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .col-md-8 {
+        text-align: center;
+    }
+
+    ul.list-unstyled li {
+        justify-content: center;
+    }
+
+    .accordion-button {
+        text-align: center;
+    }
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #2571b2; /* Fondo del footer */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
+}
+
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+}
+
+.footer .column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .column h3,
+.footer .column h5 {
+    font-weight: bolder;
+}
+
+.footer .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Línea separadora del footer */
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Texto del copyright */
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
+}

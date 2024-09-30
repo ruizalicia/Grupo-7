@@ -1,0 +1,286 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Open Sans", sans-serif;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%; /* Ocupará el ancho completo de la pantalla */
+    height: 50vh; /* Ajusta este valor para controlar la altura */
+    background-color: #f4f4f4; /* Color de fondo */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.hero-section img {
+    max-width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+}
+
+.experience_presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience_presentation h1 {
+    text-align: center;
+    font-weight: 745;
+    font-size: 35px;
+    color: #0d497e;
+    margin: 10px 0 10px; /* Unificación de márgenes */
+}
+
+.experience_presentation p {
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    color: #111111;
+}
+
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Cambiado a space-between para tres columnas */
+    padding: 30px;
+}
+
+.experiences-card {
+    background-color: #dfdcdcd3;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Espacio entre las tarjetas */
+    overflow: hidden;
+    width: calc(33.333% - 40px); /* Ajustado para tres columnas */
+    text-align: center;
+    position: relative;
+}
+
+.experiences-card img {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 13px;
+}
+
+.experiences-card .favorite {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    color: #8b8585;
+    cursor: pointer;
+}
+
+.experiences-card .favorite.selected {
+    color: #f81414;
+}
+
+.experiences-card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 12px;
+    color: #2571BC;
+}
+
+.experiences-card h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #4d4949;
+    margin: 0px;
+    padding: 13px;
+    text-align: justify;
+}
+
+.experiences-card .text-container p {
+    text-align: justify;
+    font-size: 13px;
+    margin: 4px 0;
+    padding: 12px;
+}
+
+.experiences-card h4 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #0d497e;
+    padding: 12px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #78828a;
+}
+
+.star:hover,
+.star.selected {
+    color: #efb810;
+}
+
+.text-container {
+    position: relative;
+    max-height: 100px; 
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.text-container.expanded {
+    max-height: 500px; 
+}
+
+.more-info-link {
+    font-size: 13px;
+    display: block;
+    margin: 2px auto;
+    color: #74b1ce;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.more-info-link:hover {
+    text-decoration: underline;
+    color: #1585f5;
+}
+
+.experiences-button {
+    background-color: #3696f7; 
+    color: #070707;              
+    padding: 10px 20px;        
+    border: none;      
+    margin-top: 1px;
+    margin-bottom: 19px;       
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 14px;          
+    font-weight: 600;        
+    transition: background-color 0.3s ease; 
+}
+
+.experiences-button:hover {
+    background-color: #2571BC; 
+}
+
+/* Media Queries para mejorar la respuesta en dispositivos móviles */
+@media (max-width: 1024px) {
+    .experiences-card {
+        width: calc(50% - 40px); /* 2 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .experiences-card {
+        width: 90%; /* 1 columna en pantallas pequeñas */
+        margin: 10px auto; /* Acentuar el margen */
+    }
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #2571b2; /* Fondo del footer */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
+}
+
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+}
+
+.footer .column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .column h3,
+.footer .column h5 {
+    font-weight: bolder;
+}
+
+.footer .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alinear el logo a la derecha */
+.footer .column:first-child {
+    display: flex; /* Usar flex para el logo */
+    justify-content: flex-end; /* Alinear el logo a la derecha */
+    align-items: flex-start; /* Alinear verticalmente en el centro */
+}
+
+/* Estilo de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Línea separadora del footer */
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Texto del copyright */
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
+}

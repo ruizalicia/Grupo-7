@@ -1,0 +1,246 @@
+/* General Layout */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la galería de imágenes */
+.clear-fix {
+	clear: both;
+}
+
+.masonry-container {
+	width: 80vw;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.panel {
+	position: relative;
+	display: inline-block;
+	width: calc((80vw - 60px)/3);
+	height: calc((80vw - 60px)/3);
+	margin-left: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
+	transition: all 0.2s ease-out;
+}
+
+.panel:hover {
+	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.55);
+	transition: all 0.2s ease-out;
+}
+
+.panel:nth-child(11n+1) {
+	margin-left: 0;
+}
+
+.panel:nth-child(11n+4) {
+	margin-left: 0;
+	width: calc(((80vw - 20px)/3)*2);
+	height: calc((80vw - 60px)/3);
+}
+
+.panel:nth-child(11n+6) {
+	margin-left: 0;
+	float: left;
+	width: calc((80vw - 60px)/3);
+	height: calc(((80vw - 20px)/3)*2 - 8px);
+}
+
+.panel:nth-child(11n+6) > .panel-wrapper > .panel-img {
+	transform: translateX(-25%);
+}
+
+.panel:nth-child(11n+7) {
+	margin-left: 27px;
+	width: calc(((80vw - 20px)/3)*2);
+}
+
+.panel:nth-child(11n+8) {
+	margin-left: 27px;
+}
+
+.panel:nth-child(11n+9) {
+	float: none;
+}
+
+.panel:nth-child(11n+10) {
+	margin-left: 0;
+	width: calc((80vw - 30px)/2);
+}
+
+.panel:nth-child(11n+11) {
+	width: calc((80vw - 30px)/2);
+}
+
+.panel-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden !important;
+}
+
+.panel-overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+
+.panel-overlay:hover {
+	opacity: 1;
+	transition: all 0.3s ease-out;
+}
+
+.panel-text {
+	position: absolute;
+	width: 80%;
+	height: 60px;
+	margin: 0 auto;
+	left: 25px;
+	bottom: 0;
+	z-index: 10;
+}
+
+.panel-title {
+	font-size: 1em;
+	font-weight: 300;
+	letter-spacing: 0;
+	color: #fff;
+}
+
+.panel-tags {
+	padding-top: 2px;
+}
+
+.tag-icon-img {
+	display: inline-block;
+	width: 10px;
+	height: auto;
+	transform: translateY(2px);
+}
+
+.tags-list {
+	font-size: 0.55em;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #fff;
+}
+
+.panel-gradient {
+	position: absolute;
+	width: 100%;
+	height: 65%;
+	bottom: 0;
+	opacity: 0.65;
+	z-index: 5;
+}
+
+.panel-vingette {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	opacity: 0.5;
+}
+
+.panel-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	margin: 0 auto;
+	min-width: 100%;
+	height: 100%;
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #2571b2; /* Fondo del footer */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 40px; /* Espacio superior entre el contenido anterior y el footer */
+}
+
+.footer ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el espacio de sangría a la izquierda */
+    margin: 0; /* Ajusta el margen si es necesario */
+}
+
+.footer .column ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .column ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas con espacio entre ellas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior después del contenedor */
+}
+
+.footer .column {
+    flex: 1; /* Hace que todas las columnas se expandan por igual */
+    margin: 0 10px; /* Espaciado horizontal entre columnas */
+    min-width: 200px; /* Ancho mínimo para columnas pequeñas */
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer .column h3,
+.footer .column h5 {
+    font-weight: bolder;
+}
+
+.footer .column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado entre los iconos */
+}
+
+.social-icons img {
+    width: 35px; /* Tamaño de los iconos */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Línea separadora del footer */
+.footer-separator {
+    border-top: 1px solid #ccc; /* Línea separadora */
+    width: 80%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Texto del copyright */
+.copyright {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-top: 10px; /* Espaciado superior */
+    color: #fff;
+}
