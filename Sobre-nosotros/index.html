@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recorriendo mi Pulgarcito - Sobre nosotros</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="Imagenes_Sobre_Nosotros/logo_navbar.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog & Testimonios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
-                </ul>
+    <header class="mb-4">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Imagenes_Sobre_Nosotros/logo_navbar.png" alt="Recorriendo mi pulgarcito">
             </div>
+            <ul class="nav justify-content-center">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#">Blog & Testimonios</a></li>
+                <li><a href="#">Galería</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="accountDropdown">Mi Cuenta</a>
+                    <ul class="dropdown-menu" id="accountDropdownMenu">
+                        <li><a href="perfil.html" id="PerfilLink">Perfil</a></li>
+                        <li><a href="#" id="LogoutLink">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -54,62 +59,80 @@
 
         <section class="nuestro-equipo mt-5">
             <h2 class="text-center">Nuestro Equipo</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img src="Imagenes_Sobre_Nosotros/ceo.png" alt="Celina Andrea Hernández" class="img-fluid rounded-circle mb-3">
-                    <h4>Celina Andrea Hernández</h4>
-                    <p>Fundadora y CEO</p>
+            <div class="row equipo-container">
+                <div class="col-md-3 text-center">
+                    <div class="equipo-img" style="background-image: url('Imagenes_Sobre_Nosotros/Karina Alvarez.jpeg');"></div>
+                    <h4>Karina Alvarez</h4>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="Imagenes_Sobre_Nosotros/agente_2.png" alt="Nicolás Rivas Molina" class="img-fluid rounded-circle mb-3">
-                    <h4>Nicolás Rivas Molina</h4>
-                    <p>Gerente de Marketing</p>
+                <div class="col-md-3 text-center">
+                    <div class="equipo-img" style="background-image: url('Imagenes_Sobre_Nosotros/Katherine_Guevara.jpg');"></div>
+                    <h4>Katherine Guevara</h4>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="Imagenes_Sobre_Nosotros/agente_1.png" alt="Elizabeth Guevara Bonilla" class="img-fluid rounded-circle mb-3">
-                    <h4>Elizabeth Guevara Bonilla</h4>
-                    <p>Coordinadora de Proyectos</p>
+                <div class="col-md-3 text-center">
+                    <div class="equipo-img" style="background-image: url('Imagenes_Sobre_Nosotros/Jacqueline Menjívar.jpg');"></div>
+                    <h4>Jacqueline Menjívar</h4>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="Imagenes_Sobre_Nosotros/gerente de ventas.png" alt="Valentina Sofía L. Andreu" class="img-fluid rounded-circle mb-3">
-                    <h4>Valentina Sofía L. Andreu</h4>
-                    <p>Desarrolladora Web</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="Imagenes_Sobre_Nosotros/Operador turistico.png" alt="Carlos Rivera Menjívar" class="img-fluid rounded-circle mb-3">
-                    <h4>Carlos Rivera Menjívar</h4>
-                    <p>Fotógrafo</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="Imagenes_Sobre_Nosotros/Gerente General.png" alt="Lidia Ramos Jirón" class="img-fluid rounded-circle mb-3">
-                    <h4>Lidia Ramos Jirón</h4>
-                    <p>Diseñadora Gráfica</p>
+                <div class="col-md-3 text-center">
+                    <div class="equipo-img" style="background-image: url('Imagenes_Sobre_Nosotros/JENNIFER-BONILLA.jpg');"></div>
+                    <h4>Jacqueline Bonilla</h4>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="text-center py-4">
-        <div class="container">
-            <div class="contacto mb-3">
-                <p><strong>Dirección:</strong> Edificio Century Tower, Nivel 1C y 1I #243 Col. San Benito San Salvador CP, 1101</p>
-                <p><strong>Horario:</strong> Lunes a viernes: 8:00 am - 5:00 pm</p>
-                <p><strong>Teléfono:</strong> +503 2257-7777</p>
-                <p><strong>Correo:</strong> <a href="mailto:recorriendo@mipulgarcito.com" style="color: white;">recorriendo@mipulgarcito.com</a></p>
-            </div>
-            <div class="redes-sociales mb-3">
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/facebook.png" alt="Facebook" class="mx-2"></a>
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/insragram.png" alt="Instagram" class="mx-2"></a>
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/whatsapp.png" alt="WhatsApp" class="mx-2"></a>
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/linkedin.png" alt="LinkedIn" class="mx-2"></a>
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/spotify.png" alt="Spotify" class="mx-2"></a>
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/twitter.png" alt="Twitter" class="mx-2"></a>
-                <a href="#"><img src="Imagenes_Sobre_Nosotros/logo_footer.png" alt="Logo Footer" class="mx-2"></a>
-            </div>
-            <p>&copy; Recorriendo mi Pulgarcito 2024 | DERECHOS RESERVADOS</p>
-        </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="column">
+                <img src="Imagenes_Sobre_Nosotros/logo_footer.png" alt="Recorriendo mi Pulgarcito Logo" style="width: 200px;">
+            </div>
+            <div class="column">
+                <h5>Dirección:</h5>
+                <p>Edificio Century Tower, Nivel 10 y 11 #243 Col. San Benito San Salvador CP, 1101</p>
+                <h5>Horario:</h5>
+                <p>Lunes a viernes: 8:00 am - 5:00 pm</p>
+                <h5>Teléfono:</h5>
+                <p>+503 2257-7777</p>
+                <h5>Correo:</h5>
+                <p>recorriendo@mipulgarcito.com</p>
+            </div>
+            <div class="column">
+                <h3>Acerca de</h3>
+                <ul>
+                    <li>Sobre nosotros</li>
+                    <li>Blog</li>
+                    <li>Destinos populares</li>
+                    <li>Experiencias</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Información Legal</h3>
+                <ul>
+                    <li>Términos y condiciones</li>
+                    <li>Política de Privacidad</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Línea separadora -->
+        <div class="footer-separator"></div>
+    
+        <div class="social-icons">
+            <a href="#"><img src="Imagenes_Sobre_Nosotros/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Imagenes_Sobre_Nosotros/insragram.png" alt="Instagram"></a>
+            <a href="#"><img src="Imagenes_Sobre_Nosotros/spotify.png" alt="Spotify"></a>
+            <a href="#"><img src="Imagenes_Sobre_Nosotros/whatsapp.png" alt="whatsapp"></a>
+            <a href="#"><img src="Imagenes_Sobre_Nosotros/linkedin.png" alt="linkedin"></a>
+        </div>
+        <div class="copyright">
+            &copy;RECORRIENDO MI PULGARCITO 2024 | DERECHOS RESERVADOS
+        </div>
+    </footer>
+    
+    <!-- Archivos JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
