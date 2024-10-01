@@ -5,20 +5,13 @@ body {
     box-sizing: border-box;
 }
 
-header {
-   
-}
-
 html, body {
     margin: 0;
     padding: 0;
 }
 
-
-
 /*imagen de bienvenida*/
 .hero-section{
-   
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
@@ -32,6 +25,8 @@ html, body {
     margin: 0;
     padding: 0;
     border: none;
+    width: 100%;
+    height: auto;
 }
 
 .text-nosotros{
@@ -55,7 +50,6 @@ html, body {
     opacity: 0.10; 
 }
 .hero-text {
-    
     position: absolute;
     top: 65%;
     left: 50%;
