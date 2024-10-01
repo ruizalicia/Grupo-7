@@ -33,7 +33,7 @@ header {
 .navbar {
     display: flex;
     justify-content: center; /* Centra el menú de navegación */
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     align-items: center;
     align-content: center;
 }
@@ -46,7 +46,9 @@ header {
 }
 
 .navbar li {
-    display: inline; /* Alinea los elementos horizontalmente */
+    display: inline-block; /* Alinea los elementos horizontalmente */
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo para el logo */
@@ -71,7 +73,6 @@ header {
     text-decoration: none;
 }
 
-/* Alineación de los elementos del menú 
 .nav.justify-content-center {
     display: flex;
     justify-content: center;
