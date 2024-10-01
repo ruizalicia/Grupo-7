@@ -6,16 +6,17 @@ body {
 }
 
 
- /*imagen de bienvenida*/
- .hero-section{
+/*imagen de bienvenida*/
+.hero-section{
     background-image: url(Imagén_Bienvenida.png);
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    padding-left: 15px;
-    
-    
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
+
 .hero-section img{
     position: relative;
     height: 85vh;
