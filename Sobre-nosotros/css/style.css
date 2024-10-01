@@ -1,9 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
-header {
-    margin-bottom: 50px;
+/* Estilo para la imagen del hero */
+.hero-image {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho */
+    height: 40vh; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionarse */
+    position: absolute; /* Posiciona la imagen de manera absoluta */
+    top: 0; /* Coloca la imagen en la parte superior */
+    left: 0; /* Coloca la imagen en la parte izquierda */
+    z-index: 0; /* Asegúrate de que esté detrás del texto */
+}
+
+/* Centrar el texto en la imagen */
+.hero-text {
+    text-align: center;
+    position: relative; /* Permite el posicionamiento dentro del hero */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado alrededor del texto */
+}
+
+/* Ajustes para pantallas pequeñas */
+.hero-text h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.hero-text p {
+    font-size: 1.2em; /* Tamaño del párrafo */
+    max-width: 600px; /* Máximo ancho del párrafo */
+    margin: 0 auto; /* Centra el párrafo */
 }
 
 /* Justificar texto en los párrafos */
@@ -11,9 +39,10 @@ p {
     text-align: justify; /* Justifica el texto */
 }
 
+/* Ajustar las imágenes del equipo */
 .equipo-img {
-    width: 200px; /* Tamaño del contenedor circular */
-    height: 200px;
+    width: 150px; /* Reduce un poco el tamaño del contenedor circular */
+    height: 150px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -25,26 +54,44 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap; /* Asegura que las imágenes no se solapen al hacer wrap */
 }
 
+/* Ajustar el margen superior de los títulos de equipo */
 h4 {
     margin-top: 10px;
 }
 
 /* Estilo responsivo para pantallas más pequeñas */
 @media (max-width: 768px) {
+    .hero-image {
+        height: 30vh; /* Ajusta la altura de la imagen en pantallas pequeñas si es necesario */
+    }
+
+    .hero-text h1 {
+        font-size: 2em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .hero-text p {
+        font-size: 1em; /* Ajusta el tamaño del párrafo en pantallas pequeñas */
+    }
+
     .equipo-container {
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     }
+
     .equipo-container .col-md-3 {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     }
 }
 
-.sobre-nosotros img, .mision img, .nuestro-equipo img {
-    width: 100%;
-    height: auto;
+/* Evitar que el contenido se desborde en pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 100%; /* Asegura que la imagen de fondo se ajuste correctamente en pantallas pequeñas */
+    }
 }
+
 
 /* Estilo del footer */
 .footer {
