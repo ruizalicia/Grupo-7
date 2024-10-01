@@ -32,71 +32,68 @@
         </nav>
     </header>
 
-    <!---bienvenida----->
-    <!----imagen bienvenida--->
-    <div class="container">
-        <img class="containerimg" src="PNG/Imagén_Bienvenida.png" alt="Snow" style="width:100%">
-        
-        <!-- Texto dentro de la imagen -->
-        <div class="text1" style="color: #fff;">"VIVE EL SALVADOR COMO NUNCA ANTES"</div>
-        
-        <!-- Slogan -->
-        <div class="text2">Registrate y Accede a Nuestras Experiencias Únicas</div>
-        
-        <br><br>
-        
-        <!-- Botón en la imagen -->
-        <div style="text-align: center;">
-            <button class="btn" style="color: #fff;" name="Explorar" aria-label="Explorar Experiencias" onclick="window.location.href='Destinos-experiencias-y-tours/Experiencias.html'">Explorar Ahora</button>
-        </div>
-    </div>
+<!---bienvenida hero section----->
+<div class="container">
+    <img class="containerimg" src="PNG/Imagén_Bienvenida.png" alt="Snow" style="width:100%">
     
+    <!-- Texto dentro de la imagen -->
+    <div class="text1">"VIVE EL SALVADOR COMO NUNCA ANTES"</div>
+    
+    <!-- Slogan -->
+    <div class="text2">Regístrate y Accede a Nuestras Experiencias Únicas</div>
+    
+    <br><br>
+    
+    <!-- Botón en la imagen -->
+    <div style="text-align: center;">
+        <button class="btn small-btn" aria-label="Explorar Experiencias" onclick="window.location.href='Destinos-experiencias-y-tours/Experiencias.html'">Explorar Ahora</button>
+    </div>
+</div>
 
-<!----parrafo de AVENTUREROS seccion izquierda--->
-<section id="SECTION1" class="SECTION1">
+<!---parrafo de AVENTUREROS seccion izquierda----->
+<div class="section">
     <div class="izquierda">
-        <h1 class="H1">ÚNETE A NUESTRA</h1>
-        <h2 class="H2">COMUNIDAD</h2>
-        <h1 class="H3">DE AVENTUREROS</h1>
+        <h1 class="H1">Únete a nuestra comunidad</h1>
+        <h1 class="H2">de aventureros</h1>
         <p>Regístrate y disfruta de una experiencia turística</p>
         <p>personalizada y enriquecedora en El Salvador.</p><br>
         <p>Al abrir una cuenta, accederás a beneficios exclusivos</p>
         <p>que harán de tu viaje una aventura inolvidable.</p><br>
 
         <!-- Botón para abrir el modal -->
-        <button onclick="document.getElementById('id01').style.display='block'">Regístrate Ahora</button>
+        <button class="small-btn" onclick="document.getElementById('id01').style.display='block'">Regístrate Ahora</button>
 
         <!-- El Modal (contiene el formulario de registro) -->
-    <div id="id01" class="modal">
-        <span class="close" title="Close Modal">×</span>
-        <form class="modal-content" action="#">
-            <div class="container">
-                <h1>Registrarse</h1>
-                <p>Por favor, completa este formulario para crear una cuenta.</p>
-                <hr>
-                <label for="email"><b>Correo Electrónico</b></label>
-                <input type="text" placeholder="Ingresa tu correo" name="email" required>
+        <div id="id01" class="modal">
+            <span class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="#">
+                <div class="container">
+                    <h1>Registrarse</h1>
+                    <p>Por favor, completa este formulario para crear una cuenta.</p>
+                    <hr>
+                    <label for="email"><b>Correo Electrónico</b></label>
+                    <input type="text" placeholder="Ingresa tu correo" name="email" required>
 
-                <label for="psw"><b>Contraseña</b></label>
-                <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
 
-                <label for="psw-repeat"><b>Repite la Contraseña</b></label>
-                <input type="password" placeholder="Repite tu contraseña" name="psw-repeat" required>
+                    <label for="psw-repeat"><b>Repite la Contraseña</b></label>
+                    <input type="password" placeholder="Repite tu contraseña" name="psw-repeat" required>
 
-                <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recuérdame
-                </label>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recuérdame
+                    </label>
 
-                <p>Al crear una cuenta, aceptas nuestros <a href="#" style="color:dodgerblue">Términos y Privacidad</a>.</p>
+                    <p>Al crear una cuenta, aceptas nuestros <a href="#" style="color:dodgerblue">Términos y Privacidad</a>.</p>
 
-                <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                    <button type="submit" class="signup">Registrarse</button>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                        <button type="submit" class="signup">Registrarse</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div>
 
     <div class="derecha">
         <div class="benefit">
@@ -123,7 +120,9 @@
             <p>Descubre experiencias únicas y crea un itinerario a tu medida.</p>
         </div>
     </div>
-</section>
+</div>
+
+
 <script src="JS/modal.js"></script>
 
 

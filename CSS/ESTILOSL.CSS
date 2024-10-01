@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
 }
 
 /* Estilo general del cuerpo */
@@ -20,17 +19,18 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    padding-left: 0px;
-    height: auto;
+    position: relative; /* Asegúrate de que el contenedor esté posicionado correctamente */
     width: 100%;
 }
 
-.image {
-    position: relative;
+/* Imagen dentro del contenedor */
+.container img {
+    width: 100%;
+    height: auto;
 }
 
+/* Texto dentro de la imagen */
 .text1 {
-    font-family: "Open Sans";
     position: absolute;
     top: 60%;
     left: 50%;
@@ -42,118 +42,52 @@ body {
     text-align: center;
 }
 
-.text1 img {
-    width: 100%;
-    text-align: center;
-    justify-items: center; 
-    opacity: 0.10; 
-}
-
 .text2 {
-    font-family: "Open Sans";
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 24px;
-    padding: 10px;
     opacity: 0.8;
     width: 100%;
     text-align: center;
 }
 
+/* Estilo del botón (ajustado para ser más pequeño) */
 .btn {
-    background-color: #2571bc;
-    padding: 10px 20px; /* Reduce el padding para un tamaño más pequeño */
-    font-size: 20px; /* Reduce el tamaño de la fuente */
-}
-
-button {
-    transition-duration: 0.4s;
-    text-decoration: none;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-}
-
-.container img {
-    width: 100%;
-    height: auto;
-}
-
-.container .btn {
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #2571bc;
-    color: white; /* Cambiado para asegurar que el texto del botón sea legible */
-    font-size: 20px; /* Ajustado para que sea más pequeño */
-    padding: 10px 20px; /* Ajustado para un tamaño más pequeño */
+    color: white;
+    font-size: 25px; /* Ajusta el tamaño de la fuente */
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none;
     transition: background-color 0.4s;
 }
 
-.container .btn:hover {
+.btn.small-btn {
+    font-size: 18px; /* Tamaño de fuente más pequeño */
+    width: 250px;
+}
+
+.btn:hover {
     background-color: #8ecae6;
-    color: white;
-}
-
-
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #2571bc;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-    padding: 10px 20px; /* Ajusta el padding */
-    width: auto; /* Ajusta el ancho automático */
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    vertical-align: middle;
-}
-
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button:hover span {
-    padding-right: 25px;
-}
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
 }
 
 /* Estilos sección AVENTUREROS */
+.section {
+    display: flex; /* Hacer que la sección use flexbox */
+}
+
 .izquierda {
-    height: auto;
     background-color: white;
-    padding: 70px; /* Cambié "70PX" a "70px" para que sea consistente */
-    width: 550px;
+    padding: 70px; /* Espaciado */
+    width: 50%; /* Ajustar ancho para permitir espacio para la sección derecha */
 }
 
 .H1, .H2, .H3 {
@@ -161,16 +95,17 @@ button {
     text-align: justify; /* Eliminar align-items ya que no es aplicable aquí */
 }
 
-.SECTION1 {
+/* Alinear la sección derecha */
+.derecha {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1; /* La sección derecha tomará el espacio restante */
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear hacia el inicio */
 }
 
-/* Estilos generales */
-* {
-    box-sizing: border-box;
-}
-
-/* Campos de entrada */
+/* Estilo general */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
@@ -198,10 +133,6 @@ button {
     opacity: 0.9;
 }
 
-button:hover {
-    opacity: 1;
-}
-
 /* Estilo adicional para el botón de cancelar */
 .cancelbtn {
     background-color: #f44336;
@@ -211,11 +142,6 @@ button:hover {
 .cancelbtn, .signup {
     float: left;
     width: 50%;
-}
-
-/* Padding para contenedores */
-.container {
-    padding: 16px;
 }
 
 /* Modal (fondo) */
@@ -276,33 +202,22 @@ hr {
     }
 }
 
-/* Estilos para la sección derecha */
-.derecha {
-    background-color: #fff;
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /* Estilos para los beneficios */
 .benefit {
-    align-items: center;
+    display: flex; /* Hacer que el beneficio use flexbox */
+    align-items: center; /* Centrar verticalmente el contenido */
     margin-bottom: 20px;
 }
 
 .benefit img {
     max-width: 50px;
-    margin-right: 20px;
-    display: flex;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 
 .benefit h4 {
-    font-size: 1.5em;
+    font-size: 18px;
     color: #ea7700;
     margin: 0;
-    display: flex;
 }
 
 .benefit p {
@@ -324,8 +239,8 @@ hr {
     border-top: 1px solid #ffb703; /* Línea separadora */
     width: 90%; /* Ancho de la línea */
     height: 5px; /* Grosor de la línea */
-    margin: 20px auto; /* Espaciado y centrado */
 }
+
 
 /* SECCION SOBRE NOSOTROS */
                 .sobre_nosotrosimg{
