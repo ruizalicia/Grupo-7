@@ -31,7 +31,7 @@ header {
 /* Estilo para la barra de navegación */
 .navbar {
     display: flex;
-    justify-content: center; /* Centra el menú de navegación */
+    justify-content: center !important; /* Centra el menú de navegación */
     flex-grow: 1;
     align-items: center;
 }
