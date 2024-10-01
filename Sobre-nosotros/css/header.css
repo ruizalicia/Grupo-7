@@ -26,6 +26,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: fixed; 
+    margin-bottom: 0;
 }
 
 /* Estilo para la barra de navegación */
